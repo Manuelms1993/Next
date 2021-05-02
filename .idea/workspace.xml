@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +28,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/chorGenerator" />
       <recent name="$PROJECT_DIR$/resource/one-shots" />
@@ -97,25 +99,29 @@
       <screen x="0" y="25" width="2048" height="1051" />
     </state>
     <state x="732" y="161" key="#main/0.25.2048.1051@0.25.2048.1051" timestamp="1619946924644" />
-    <state width="2025" height="286" key="GridCell.Tab.0.bottom" timestamp="1619948114389">
+    <state width="2025" height="286" key="GridCell.Tab.0.bottom" timestamp="1619957670180">
       <screen x="0" y="25" width="2048" height="1051" />
     </state>
-    <state width="2025" height="286" key="GridCell.Tab.0.bottom/0.25.2048.1051@0.25.2048.1051" timestamp="1619948114389" />
-    <state width="2025" height="286" key="GridCell.Tab.0.center" timestamp="1619948114388">
+    <state width="2025" height="286" key="GridCell.Tab.0.bottom/0.25.2048.1051@0.25.2048.1051" timestamp="1619957670180" />
+    <state width="2025" height="286" key="GridCell.Tab.0.center" timestamp="1619957670179">
       <screen x="0" y="25" width="2048" height="1051" />
     </state>
-    <state width="2025" height="286" key="GridCell.Tab.0.center/0.25.2048.1051@0.25.2048.1051" timestamp="1619948114388" />
-    <state width="2025" height="286" key="GridCell.Tab.0.left" timestamp="1619948114387">
+    <state width="2025" height="286" key="GridCell.Tab.0.center/0.25.2048.1051@0.25.2048.1051" timestamp="1619957670179" />
+    <state width="2025" height="286" key="GridCell.Tab.0.left" timestamp="1619957670179">
       <screen x="0" y="25" width="2048" height="1051" />
     </state>
-    <state width="2025" height="286" key="GridCell.Tab.0.left/0.25.2048.1051@0.25.2048.1051" timestamp="1619948114387" />
-    <state width="2025" height="286" key="GridCell.Tab.0.right" timestamp="1619948114389">
+    <state width="2025" height="286" key="GridCell.Tab.0.left/0.25.2048.1051@0.25.2048.1051" timestamp="1619957670179" />
+    <state width="2025" height="286" key="GridCell.Tab.0.right" timestamp="1619957670179">
       <screen x="0" y="25" width="2048" height="1051" />
     </state>
-    <state width="2025" height="286" key="GridCell.Tab.0.right/0.25.2048.1051@0.25.2048.1051" timestamp="1619948114389" />
-    <state x="534" y="186" key="SettingsEditor" timestamp="1619945937067">
+    <state width="2025" height="286" key="GridCell.Tab.0.right/0.25.2048.1051@0.25.2048.1051" timestamp="1619957670179" />
+    <state x="534" y="186" key="SettingsEditor" timestamp="1619948713787">
       <screen x="0" y="25" width="2048" height="1051" />
     </state>
-    <state x="534" y="186" key="SettingsEditor/0.25.2048.1051@0.25.2048.1051" timestamp="1619945937067" />
+    <state x="534" y="186" key="SettingsEditor/0.25.2048.1051@0.25.2048.1051" timestamp="1619948713787" />
+    <state x="690" y="258" key="search.everywhere.popup" timestamp="1619950907245">
+      <screen x="0" y="25" width="2048" height="1051" />
+    </state>
+    <state x="690" y="258" key="search.everywhere.popup/0.25.2048.1051@0.25.2048.1051" timestamp="1619950907245" />
   </component>
 </project>
