@@ -2,21 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ChordGenerators/Chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chorGenerator/ChordGenerators/Chords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChordGenerators/Melody.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chorGenerator/ChordGenerators/Melody.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GAN/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chorGenerator/GAN/Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GAN/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chorGenerator/GAN/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/Graphics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chorGenerator/Graphics/Graphics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chorGenerator/Graphics/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chorGenerator/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistence/Persistence.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chorGenerator/Persistence/Persistence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistence/Utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chorGenerator/Persistence/Utilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistence/wavfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chorGenerator/Persistence/wavfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,6 +38,34 @@
       <recent name="$PROJECT_DIR$/resource/one-shots" />
       <recent name="$PROJECT_DIR$/resource/mid" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NEXT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -65,6 +93,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="732" y="161" key="#main" timestamp="1619946924644">
+      <screen x="0" y="25" width="2048" height="1051" />
+    </state>
+    <state x="732" y="161" key="#main/0.25.2048.1051@0.25.2048.1051" timestamp="1619946924644" />
+    <state width="2025" height="286" key="GridCell.Tab.0.bottom" timestamp="1619948114389">
+      <screen x="0" y="25" width="2048" height="1051" />
+    </state>
+    <state width="2025" height="286" key="GridCell.Tab.0.bottom/0.25.2048.1051@0.25.2048.1051" timestamp="1619948114389" />
+    <state width="2025" height="286" key="GridCell.Tab.0.center" timestamp="1619948114388">
+      <screen x="0" y="25" width="2048" height="1051" />
+    </state>
+    <state width="2025" height="286" key="GridCell.Tab.0.center/0.25.2048.1051@0.25.2048.1051" timestamp="1619948114388" />
+    <state width="2025" height="286" key="GridCell.Tab.0.left" timestamp="1619948114387">
+      <screen x="0" y="25" width="2048" height="1051" />
+    </state>
+    <state width="2025" height="286" key="GridCell.Tab.0.left/0.25.2048.1051@0.25.2048.1051" timestamp="1619948114387" />
+    <state width="2025" height="286" key="GridCell.Tab.0.right" timestamp="1619948114389">
+      <screen x="0" y="25" width="2048" height="1051" />
+    </state>
+    <state width="2025" height="286" key="GridCell.Tab.0.right/0.25.2048.1051@0.25.2048.1051" timestamp="1619948114389" />
     <state x="534" y="186" key="SettingsEditor" timestamp="1619945937067">
       <screen x="0" y="25" width="2048" height="1051" />
     </state>
