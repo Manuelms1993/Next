@@ -2,8 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/tutorial/drums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tutorial/groove.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tutorial/interpolate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tutorial/nsynth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Kick 01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Kick 02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 08.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 12.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 13.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 14.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 15.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 16.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 17.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 18.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 20.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 22.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorial/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,15 +53,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/content" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/tutorial" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tutorial" />
       <recent name="$PROJECT_DIR$/content" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -41,7 +70,70 @@
       <recent name="$PROJECT_DIR$/resource/mid" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.nsynth">
+    <configuration name="drums" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NEXT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tutorial" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tutorial/drums.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="interpolate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NEXT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tutorial" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tutorial/interpolate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NEXT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tutorial" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tutorial/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NEXT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,8 +155,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="nsynth" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NEXT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tutorial" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tutorial/nsynth.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.nsynth" />
+        <item itemvalue="Python.drums" />
+        <item itemvalue="Python.interpolate" />
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -81,6 +198,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -93,35 +211,5 @@
       <updated>1578339312785</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="732" y="161" key="#main" timestamp="1619946924644">
-      <screen x="0" y="25" width="2048" height="1051" />
-    </state>
-    <state x="732" y="161" key="#main/0.25.2048.1051@0.25.2048.1051" timestamp="1619946924644" />
-    <state width="2025" height="286" key="GridCell.Tab.0.bottom" timestamp="1619957670180">
-      <screen x="0" y="25" width="2048" height="1051" />
-    </state>
-    <state width="2025" height="286" key="GridCell.Tab.0.bottom/0.25.2048.1051@0.25.2048.1051" timestamp="1619957670180" />
-    <state width="2025" height="286" key="GridCell.Tab.0.center" timestamp="1619957670179">
-      <screen x="0" y="25" width="2048" height="1051" />
-    </state>
-    <state width="2025" height="286" key="GridCell.Tab.0.center/0.25.2048.1051@0.25.2048.1051" timestamp="1619957670179" />
-    <state width="2025" height="286" key="GridCell.Tab.0.left" timestamp="1619957670179">
-      <screen x="0" y="25" width="2048" height="1051" />
-    </state>
-    <state width="2025" height="286" key="GridCell.Tab.0.left/0.25.2048.1051@0.25.2048.1051" timestamp="1619957670179" />
-    <state width="2025" height="286" key="GridCell.Tab.0.right" timestamp="1619957670179">
-      <screen x="0" y="25" width="2048" height="1051" />
-    </state>
-    <state width="2025" height="286" key="GridCell.Tab.0.right/0.25.2048.1051@0.25.2048.1051" timestamp="1619957670179" />
-    <state x="534" y="186" key="SettingsEditor" timestamp="1619948713787">
-      <screen x="0" y="25" width="2048" height="1051" />
-    </state>
-    <state x="534" y="186" key="SettingsEditor/0.25.2048.1051@0.25.2048.1051" timestamp="1619948713787" />
-    <state x="690" y="258" key="search.everywhere.popup" timestamp="1619950907245">
-      <screen x="0" y="25" width="2048" height="1051" />
-    </state>
-    <state x="690" y="258" key="search.everywhere.popup/0.25.2048.1051@0.25.2048.1051" timestamp="1619950907245" />
   </component>
 </project>
