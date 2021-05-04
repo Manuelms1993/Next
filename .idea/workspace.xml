@@ -19,54 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/Configuration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generator/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generator/generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/otherCode/chorGenerator/GAN/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/otherCode/chorGenerator/Graphics/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Constant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/FSUtils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5Kaskade_IRemember.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_ FaxingBerlin_1.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_ FaxingBerlin_2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_Animal_Rights.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_Arguru.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_Get_in_the_Cart_Pig.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_Maths.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_RaiseYourWeapon.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_RightThisSecond.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_Soma.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_SomeChords.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_Strobe_1.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_Strobe_2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/Deadmau5_Strobe_3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/deadmau5_4ware.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/deadmau5_Monophobia.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/deadmau5_TheVeldt.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/deadmau5_moarghostandstuff.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mid/Deadmau5/deadmau5_polaris.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chorGenerator/ChordGenerators/Chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/chorGenerator/ChordGenerators/Chords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chorGenerator/ChordGenerators/Melody.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/chorGenerator/ChordGenerators/Melody.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chorGenerator/GAN/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/chorGenerator/GAN/Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chorGenerator/GAN/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chorGenerator/Graphics/Graphics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/chorGenerator/Graphics/Graphics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chorGenerator/Graphics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chorGenerator/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/chorGenerator/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chorGenerator/Persistence/Persistence.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/chorGenerator/Persistence/Persistence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chorGenerator/Persistence/Utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/chorGenerator/Persistence/Utilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chorGenerator/Persistence/wavfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/chorGenerator/Persistence/wavfile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tutorial/drums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/tutorial/drums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tutorial/groove.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/tutorial/groove.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tutorial/interpolate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/tutorial/interpolate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tutorial/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/tutorial/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tutorial/nsynth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherCode/tutorial/nsynth.py" afterDir="false" />
-    </list>
+    <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
