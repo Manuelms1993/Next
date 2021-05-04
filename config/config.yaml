@@ -1,0 +1,10 @@
+general:
+  name: "track1"
+
+primaryMelody:
+  midiPath: "auto"
+  startTime_extractSubsequence: None
+  endTime_extractSubsequence: None
+  primaryMelodyModel: "attention_rnn.mag"
+  numberOfMelodies: 10
+  stepsLenth: 128
