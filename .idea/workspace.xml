@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="" />
+    <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,11 +66,11 @@
       <recent name="$PROJECT_DIR$/content" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\resources\mid\artists" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src2" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src\otherCode" />
       <recent name="$PROJECT_DIR$/src/chorGenerator" />
-      <recent name="$PROJECT_DIR$/resource/one-shots" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
