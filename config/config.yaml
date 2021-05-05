@@ -1,5 +1,6 @@
 general:
   name: "track1"
+  bpm: 128
 
 primaryMelody:
   primary_midiPath: "auto"

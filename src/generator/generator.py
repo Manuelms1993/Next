@@ -1,9 +1,9 @@
 from config.Configuration import Configuration
 from utils.FSUtils import constructOutputPath, dirExist, createDirIfNotExist
-from utils.Constant import Constants
+from utils.constant import Constants
 import logging
 from generator.magentaModels.MelodyRNN import initializeRNNModel, predictRNNSequence
-
+from persistence.loaders import loadSequence
 
 class MusicGenerator:
 
@@ -29,6 +29,9 @@ class MusicGenerator:
         primaryPath = path + "/primaryMelody"
         createDirIfNotExist(primaryPath)
 
+        # loading sequence
+        sequence = loadSequence(self.configuration.primary_midiPath, self.configuration.bpm, True)
+
         for model in self.configuration.primary_rnn_model:
 
             logging.info("Starting model: " + model)
@@ -39,5 +42,8 @@ class MusicGenerator:
             for i in range(self.configuration.primary_numberOfMelodies):
                 logging.info("    Generating melody (" + model + "): " + str(i))
 
-            # predictRNNSequence(melody_rnn=melody_rnn, )
+                predictedSequence = predictRNNSequence(melody_rnn=melody_rnn,
+                                             steps=self.configuration.primary_steps,
+                                             sequence=sequence,
+                                             temperature=i/self.configuration.primary_numberOfMelodies)
 

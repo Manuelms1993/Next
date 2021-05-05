@@ -1,5 +1,5 @@
 import os
-from utils.Constant import Constants
+from utils.constant import Constants
 
 def dirExist(path):
     return os.path.exists(path)

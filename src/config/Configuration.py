@@ -8,6 +8,7 @@ class Configuration:
 
     # General Properties
     trackName = None
+    bpm = None
 
     # primary properties
     primary_midiPath = None
@@ -26,6 +27,7 @@ class Configuration:
 
         # General Properties
         self.trackName = self.values['general']['name']
+        self.bpm = self.values['general']['bpm']
 
         # primaryMelody
         self.primary_midiPath = self.values['primaryMelody']['primary_midiPath']

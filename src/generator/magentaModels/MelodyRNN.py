@@ -9,7 +9,7 @@ from magenta.models.melody_rnn import melody_rnn_sequence_generator
 from magenta.models.shared import sequence_generator_bundle
 from note_seq.protobuf import generator_pb2
 import logging
-from utils.Constant import Constants
+from utils.constant import Constants
 
 def predictRNNSequence(sequence,
                     melody_rnn,
