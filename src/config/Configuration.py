@@ -3,18 +3,19 @@ import logging
 
 class Configuration:
 
+    # all values
     values = None
 
     # General Properties
     trackName = None
 
     # primary properties
-    midiPath = None
-    startTime_extractSubsequence = None
-    endTime_extractSubsequence = None
-    primaryMelodyModel = None
-    numberOfMelodies = None
-    stepsLenth = None
+    primary_midiPath = None
+    primary_startTime_extractSubsequence = None
+    primary_endTime_extractSubsequence = None
+    primary_numberOfMelodies = None
+    primary_steps = None
+    primary_rnn_model = None
 
     def __init__(self, path):
 
@@ -27,8 +28,8 @@ class Configuration:
         self.trackName = self.values['general']['name']
 
         # primaryMelody
-        self.midiPath = self.values['primaryMelody']['midiPath']
-        self.startTime_extractSubsequence = self.values['primaryMelody']['startTime_extractSubsequence']
-        self.endTime_extractSubsequence = self.values['primaryMelody']['endTime_extractSubsequence']
-        self.primaryMelodyModel = self.values['primaryMelody']['primaryMelodyModel']
-        self.stepsLenth = self.values['primaryMelody']['stepsLenth']
+        self.primary_midiPath = self.values['primaryMelody']['primary_midiPath']
+        self.primary_startTime_extractSubsequence = self.values['primaryMelody']['primary_startTime_extractSubsequence']
+        self.primary_endTime_extractSubsequence = self.values['primaryMelody']['primary_endTime_extractSubsequence']
+        self.primary_steps = self.values['primaryMelody']['primary_steps']
+        self.primary_rnn_model = self.values['primaryMelody']['primary_rnn_model']

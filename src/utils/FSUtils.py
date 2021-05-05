@@ -9,3 +9,7 @@ def constructOutputPath(name):
 
 def createDir(path):
     os.mkdir(path)
+
+def createDirIfNotExist(path):
+    if (not dirExist(path)):
+        createDir(path)

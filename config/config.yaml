@@ -2,9 +2,12 @@ general:
   name: "track1"
 
 primaryMelody:
-  midiPath: "auto"
-  startTime_extractSubsequence: None
-  endTime_extractSubsequence: None
-  primaryMelodyModel: "attention_rnn.mag"
-  numberOfMelodies: 10
-  stepsLenth: 128
+  primary_midiPath: "auto"
+  primary_startTime_extractSubsequence: None
+  primary_endTime_extractSubsequence: None
+  primary_numberOfMelodies: 10
+  primary_steps: 128
+  primary_rnn_model: ["basic_rnn", "mono_rnn", "lookback_rnn", "attention_rnn"]
+
+
+

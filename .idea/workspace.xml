@@ -20,7 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generator/magentaModels/MelodyRNN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generator/magentaModels/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/Configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/Configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Constant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/FSUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/FSUtils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +61,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/generator/magentaModels" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\m.montero\PycharmProjects\Next\src2" />
-      <recent name="C:\Users\m.montero\PycharmProjects\Next\src" />
-      <recent name="C:\Users\m.montero\PycharmProjects\Next\src\config" />
-      <recent name="$PROJECT_DIR$/src/tutorial" />
-      <recent name="$PROJECT_DIR$/content" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\m.montero\PycharmProjects\Next\resources\mid\artists" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src2" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src\otherCode" />
       <recent name="$PROJECT_DIR$/src/chorGenerator" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\src\generator\magentaModels" />
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\src2" />
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\src" />
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\src\config" />
+      <recent name="$PROJECT_DIR$/src/tutorial" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -201,12 +208,12 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.__init__" />
       <item itemvalue="Python.drums" />
       <item itemvalue="Python.interpolate" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.main (1)" />
       <item itemvalue="Python.nsynth" />
-      <item itemvalue="Python.__init__" />
     </list>
     <recent_temporary>
       <list>
@@ -257,29 +264,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1620144288570" />
-    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1620143753327">
+    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1620199298797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620143753327" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1620147042966">
+    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620199298797" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1620203130012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620147042966" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1620147042966">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620203130012" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1620203130012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620147042966" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1620147042966">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620203130012" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1620203130012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620147042966" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1620147042966">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620203130012" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1620203130012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620147042966" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1620143757320">
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620203130012" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1620199300778">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620143757320" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620199300778" />
   </component>
 </project>
