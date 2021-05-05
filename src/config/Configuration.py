@@ -12,8 +12,8 @@ class Configuration:
 
     # primary properties
     primary_midiPath = None
-    primary_startTime_extractSubsequence = None
-    primary_endTime_extractSubsequence = None
+    primary_startTime_extractSubsequence: int = None
+    primary_endTime_extractSubsequence: int = None
     primary_numberOfMelodies = None
     primary_steps = None
     primary_rnn_model = None

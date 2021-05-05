@@ -8,7 +8,7 @@ import logging
 
 def loadSequence(path: str, bpm: int, loadAleatory: bool = True):
 
-    if (path == None and loadAleatory):
+    if (path == None or path == "auto" and loadAleatory):
         result = [y for x in os.walk(Constants.GENERAL_MID_PATH) for y in glob(os.path.join(x[0], '*.mid'))]
         path = random.choice(result)
 

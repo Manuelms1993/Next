@@ -13,3 +13,6 @@ def createDir(path):
 def createDirIfNotExist(path):
     if (not dirExist(path)):
         createDir(path)
+
+def rename(a, b):
+    os.rename(a, b)

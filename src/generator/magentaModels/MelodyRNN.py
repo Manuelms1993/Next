@@ -28,7 +28,11 @@ def predictRNNSequence(sequence,
     seconds_per_step = 60.0 / qpm / melody_rnn.steps_per_quarter
     total_seconds = steps * seconds_per_step
 
-    logging.info("Generating RNN sequence with " + str(total_seconds) + " seconds and BPM = " + str(qpm))
+    logging.info("Generating MIDI sequence with "
+                 + str(total_seconds)
+                 + " seconds (" + str(steps)
+                 + " steps) and BPM = "
+                 + str(qpm))
 
     generator_options = generator_pb2.GeneratorOptions()
     generator_options.args['temperature'].float_value = temperature

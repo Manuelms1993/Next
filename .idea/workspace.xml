@@ -20,17 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/persistence/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/persistence/loaders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/persistence/writers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/utilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/NoteSequenceUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/Configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/Configuration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/generator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generator/magentaModels/MelodyRNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/magentaModels/MelodyRNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/persistence/loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/loaders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/persistence/writers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/writers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/FSUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/FSUtils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +61,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -268,29 +264,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1620144288570" />
-    <state x="479" y="251" key="FileChooserDialogImpl" timestamp="1620212454404">
+    <state x="479" y="251" key="FileChooserDialogImpl" timestamp="1620228269795">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="479" y="251" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620212454404" />
-    <state width="1515" height="234" key="GridCell.Tab.0.bottom" timestamp="1620218991264">
+    <state x="479" y="251" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620228269795" />
+    <state width="1515" height="234" key="GridCell.Tab.0.bottom" timestamp="1620232274936">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="234" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620218991263" />
-    <state width="1515" height="234" key="GridCell.Tab.0.center" timestamp="1620218991263">
+    <state width="1515" height="234" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620232274936" />
+    <state width="1515" height="234" key="GridCell.Tab.0.center" timestamp="1620232274936">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="234" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620218991263" />
-    <state width="1515" height="234" key="GridCell.Tab.0.left" timestamp="1620218991263">
+    <state width="1515" height="234" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620232274936" />
+    <state width="1515" height="234" key="GridCell.Tab.0.left" timestamp="1620232274936">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="234" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620218991263" />
-    <state width="1515" height="234" key="GridCell.Tab.0.right" timestamp="1620218991263">
+    <state width="1515" height="234" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620232274936" />
+    <state width="1515" height="234" key="GridCell.Tab.0.right" timestamp="1620232274936">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="234" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620218991263" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1620212459290">
+    <state width="1515" height="234" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620232274936" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1620228271481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620212459290" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620228271481" />
   </component>
 </project>
