@@ -26,10 +26,13 @@ class MusicGenerator:
 
     def __predictPrimaryMelody(self, path):
 
+        primaryPath = path + "/primaryMelody"
+        createDirIfNotExist(primaryPath)
+
         for model in self.configuration.primary_rnn_model:
 
             logging.info("Starting model: " + model)
-            modelPath = path + "/" + model
+            modelPath = primaryPath + "/" + model
             createDirIfNotExist(modelPath)
             melody_rnn = initializeRNNModel(model=model)
 

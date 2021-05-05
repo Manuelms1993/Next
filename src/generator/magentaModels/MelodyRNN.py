@@ -1,5 +1,3 @@
-from note_seq.protobuf import music_pb2
-from google.colab import files
 import magenta
 import note_seq
 import tensorflow
@@ -7,11 +5,9 @@ import os
 import random
 import sys
 from datetime import datetime
-# Import dependencies.
 from magenta.models.melody_rnn import melody_rnn_sequence_generator
 from magenta.models.shared import sequence_generator_bundle
 from note_seq.protobuf import generator_pb2
-from note_seq.protobuf import music_pb2
 import logging
 from utils.Constant import Constants
 

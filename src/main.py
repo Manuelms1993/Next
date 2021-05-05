@@ -6,6 +6,7 @@ from utils.Constant import Constants
 os.chdir(Constants.MAIN_PATH)
 logging.basicConfig(level = logging.INFO)
 
+
 if __name__ == "__main__":
     logging.info("Reading config file...")
     configuration = Configuration("config/config.yaml")
@@ -13,3 +14,4 @@ if __name__ == "__main__":
     generator = MusicGenerator(configuration)
     logging.info("Executing Generator...")
     generator.execute()
+

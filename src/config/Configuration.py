@@ -31,5 +31,6 @@ class Configuration:
         self.primary_midiPath = self.values['primaryMelody']['primary_midiPath']
         self.primary_startTime_extractSubsequence = self.values['primaryMelody']['primary_startTime_extractSubsequence']
         self.primary_endTime_extractSubsequence = self.values['primaryMelody']['primary_endTime_extractSubsequence']
+        self.primary_numberOfMelodies = self.values['primaryMelody']['primary_numberOfMelodies']
         self.primary_steps = self.values['primaryMelody']['primary_steps']
         self.primary_rnn_model = self.values['primaryMelody']['primary_rnn_model']
