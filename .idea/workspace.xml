@@ -20,14 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/NoteSequenceUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/Configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/Configuration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generator/magentaModels/MelodyRNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/magentaModels/MelodyRNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/persistence/loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/loaders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/persistence/writers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/writers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/FSUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/FSUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5Kaskade_IRemember.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_Soma.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_SomeChords.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/NoteSequenceUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/NoteSequenceUtils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,22 +266,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="479" y="251" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620228269795" />
-    <state width="1515" height="234" key="GridCell.Tab.0.bottom" timestamp="1620232274936">
+    <state width="1515" height="234" key="GridCell.Tab.0.bottom" timestamp="1620235108804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="234" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620232274936" />
-    <state width="1515" height="234" key="GridCell.Tab.0.center" timestamp="1620232274936">
+    <state width="1515" height="234" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620235108804" />
+    <state width="1515" height="234" key="GridCell.Tab.0.center" timestamp="1620235108804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="234" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620232274936" />
-    <state width="1515" height="234" key="GridCell.Tab.0.left" timestamp="1620232274936">
+    <state width="1515" height="234" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620235108804" />
+    <state width="1515" height="234" key="GridCell.Tab.0.left" timestamp="1620235108804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="234" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620232274936" />
-    <state width="1515" height="234" key="GridCell.Tab.0.right" timestamp="1620232274936">
+    <state width="1515" height="234" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620235108804" />
+    <state width="1515" height="234" key="GridCell.Tab.0.right" timestamp="1620235108804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="234" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620232274936" />
+    <state width="1515" height="234" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620235108804" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1620228271481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

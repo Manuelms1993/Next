@@ -4,7 +4,6 @@ import random
 import logging
 
 def cutSequence(sequence, start: int, end: int, aleatoryCut = True, aleatoryDuration = 1):
-    logging.info(start != None and end != None)
     if (start != None and end != None and start != "None" and end != "None"):
         logging.info("Cutting sequence. Start = " + str(start) + ", End = " + str(end))
         sequence = note_seq.extract_subsequence(
