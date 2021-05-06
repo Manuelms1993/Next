@@ -1,38 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tutorial/drums.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tutorial/groove.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tutorial/interpolate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tutorial/nsynth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generator/magentaModels/modelVAE.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Kick 01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Kick 02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 04.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 05.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 06.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 07.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 08.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 09.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 10.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 11.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 12.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 13.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 14.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 15.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 16.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 17.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 18.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 19.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 20.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 21.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/one-shots/kick/Techno Kick 22.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorial/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/Configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/Configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/persistence/writers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/writers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utilities.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,30 +42,66 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ryQ2f11tYJ99rZda07HdI1uUag" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/tutorial" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/tutorial" />
-      <recent name="$PROJECT_DIR$/content" />
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\config" />
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\src\generator\magentaModels" />
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\src2" />
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\src" />
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\src\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\resources\mid\artists" />
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\src2" />
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\src" />
+      <recent name="C:\Users\m.montero\PycharmProjects\Next\src\otherCode" />
       <recent name="$PROJECT_DIR$/src/chorGenerator" />
-      <recent name="$PROJECT_DIR$/resource/one-shots" />
-      <recent name="$PROJECT_DIR$/resource/mid" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.nsynth">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="NEXT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\m.montero\AppData\Local\Programs\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="drums" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NEXT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,7 +172,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="SDK_HOME" value="C:\Users\m.montero\AppData\Local\Programs\Python\Python37\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -176,29 +207,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.__init__" />
+      <item itemvalue="Python.drums" />
+      <item itemvalue="Python.interpolate" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.nsynth" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.nsynth" />
         <item itemvalue="Python.drums" />
         <item itemvalue="Python.interpolate" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -211,5 +238,55 @@
       <updated>1578339312785</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="484" y="8" key="#__init__" timestamp="1620143269597">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="484" y="8" key="#__init__/0.0.1536.824@0.0.1536.824" timestamp="1620143269597" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620209709931">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1620209709931" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1620144288570">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1620144288570" />
+    <state x="479" y="251" key="FileChooserDialogImpl" timestamp="1620290900462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="479" y="251" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620290900462" />
+    <state width="1515" height="234" key="GridCell.Tab.0.bottom" timestamp="1620302759226">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="234" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620302759226" />
+    <state width="1515" height="234" key="GridCell.Tab.0.center" timestamp="1620302759226">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="234" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620302759226" />
+    <state width="1515" height="234" key="GridCell.Tab.0.left" timestamp="1620302759226">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="234" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620302759226" />
+    <state width="1515" height="234" key="GridCell.Tab.0.right" timestamp="1620302759226">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="234" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620302759226" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1620290901840">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620290901840" />
   </component>
 </project>

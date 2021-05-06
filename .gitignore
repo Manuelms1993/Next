@@ -5,13 +5,10 @@ __pycache__/
 
 
 *.wav
-*.mid
-*.midi
 *.mp3
 
 content
-
-
+resources/generated/output
 
 # C extensions
 *.so
