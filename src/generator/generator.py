@@ -7,6 +7,9 @@ from persistence.loaders import loadSequence
 from persistence.writers import writeSequence
 from utils.NoteSequenceUtils import cutSequence
 from utils.NoteSequenceUtils import secondsDuration
+from utils.constant import Constants
+from utils.utilities import calculateTemperature
+from collections import Counter
 
 class MusicGenerator:
 
@@ -21,12 +24,8 @@ class MusicGenerator:
 
         self.path = constructOutputPath(self.configuration.trackName)
         createDirIfNotExist(self.path)
-
-        if (not dirExist(self.path + "/primaryMelody") and self.configuration.primary_run):
-            self.__predictPrimaryMelody()
-        else:
-            logging.info("primaryMelody directory already exist!")
-
+        infoPath = self.path + "/general"
+        createDirIfNotExist(infoPath)
 
         if (not dirExist(self.path + "/secondaryMelody") and self.configuration.secondaryMelody_run):
             self.__runVAE(self.path + "/secondaryMelody",
@@ -36,6 +35,23 @@ class MusicGenerator:
         else:
             logging.info("melody directory already exist!")
 
+        if (not dirExist(self.path + "/primaryMelody") and self.configuration.primary_run):
+            self.__run_rnnModel(
+                 pathrnn=self.path + "/primaryMelody",
+                 stringId="primaryMelody",
+                 midiPath=self.configuration.primary_midiPath,
+                 minNotes=self.configuration.primary_minimumAleatoryNotes,
+                 minUniques=self.configuration.primary_minimunUniqueNotes,
+                 midiAleatoryPath=self.configuration.primary_midiAleatoryPath,
+                 startSelectionTime=self.configuration.primary_startTime_extractSubsequence,
+                 endSelectionTime=self.configuration.primary_endTime_extractSubsequence,
+                 bpm=self.configuration.bpm,
+                 models=self.configuration.primary_rnn_model,
+                 steps=self.configuration.primary_steps,
+                 numberOfMelodies=self.configuration.primary_numberOfMelodies)
+        else:
+            logging.info("primaryMelody directory already exist!")
+
         if (not dirExist(self.path + "/drums") and self.configuration.drums_run):
             self.__runVAE(self.path + "/drums",
                           self.configuration.drums_numberOfMelodies,
@@ -44,7 +60,39 @@ class MusicGenerator:
         else:
             logging.info("drums directory already exist!")
 
+        if (not dirExist(self.path + "/bass") and self.configuration.bass_run):
+            self.__run_rnnModel(
+                 pathrnn=self.path + "/bass",
+                 stringId="bass",
+                 midiPath=self.configuration.bass_midiPath,
+                 minNotes=self.configuration.bass_minimumAleatoryNotes,
+                 minUniques=self.configuration.bass_minimunUniqueNotes,
+                 midiAleatoryPath=self.configuration.bass_midiAleatoryPath,
+                 startSelectionTime=self.configuration.bass_startTime_extractSubsequence,
+                 endSelectionTime=self.configuration.bass_endTime_extractSubsequence,
+                 bpm=self.configuration.bpm,
+                 models=self.configuration.bass_rnn_model,
+                 steps=self.configuration.bass_steps,
+                 numberOfMelodies=self.configuration.bass_numberOfMelodies)
+        else:
+            logging.info("bass directory already exist!")
 
+        if (not dirExist(self.path + "/arp") and self.configuration.arp_run):
+            self.__run_rnnModel(
+                 pathrnn=self.path + "/arp",
+                 stringId="arp",
+                 midiPath=self.configuration.arp_midiPath,
+                 minNotes=self.configuration.arp_minimumAleatoryNotes,
+                 minUniques=self.configuration.arp_minimunUniqueNotes,
+                 midiAleatoryPath=self.configuration.arp_midiAleatoryPath,
+                 startSelectionTime=self.configuration.arp_startTime_extractSubsequence,
+                 endSelectionTime=self.configuration.arp_endTime_extractSubsequence,
+                 bpm=self.configuration.bpm,
+                 models=self.configuration.arp_rnn_model,
+                 steps=self.configuration.arp_steps,
+                 numberOfMelodies=self.configuration.arp_numberOfMelodies)
+        else:
+            logging.info("arp directory already exist!")
 
 
     def __runVAE(self, pathVAE, n_melodies, models, steps):
@@ -62,10 +110,14 @@ class MusicGenerator:
 
                     logging.info("    Generating melody (" + model + "): " + str(i) + ", step = " + str(step))
 
-                    temperature = i/n_melodies + 0.0000000001
+                    temperature = calculateTemperature(n_melodies, i, self.configuration.centerTemperature)
                     sequence = generateVAE(loadedModel, 1, step, temperature)[0]
 
-                    filename = "vae" \
+                    if (secondsDuration(sequence)<=6):
+                        logging.warning("Aborting writting, sequence have less than 6 seconds")
+                        continue
+
+                    filename = "vae_" \
                                + str(i) \
                                + "_" \
                                + str(round(secondsDuration(sequence), 1)) \
@@ -75,43 +127,54 @@ class MusicGenerator:
                                + str(round(temperature, 3))
                     writeSequence(sequence=sequence, path=modelPath, name=filename)
 
-
-    def __predictPrimaryMelody(self):
+    def __run_rnnModel(self,
+                     pathrnn,
+                     stringId,
+                     midiPath,
+                     minNotes,
+                     minUniques,
+                     midiAleatoryPath,
+                     startSelectionTime,
+                     endSelectionTime,
+                     bpm,
+                     models,
+                     steps,
+                     numberOfMelodies):
 
         # creating some paths
-        primaryPath = self.path + "/primaryMelody"
-        createDirIfNotExist(primaryPath)
-        infoPath = self.path + "/info"
-        createDirIfNotExist(infoPath)
+        createDirIfNotExist(pathrnn)
 
         # loading and cut sequence
-        sequence = loadSequence(self.configuration.primary_midiPath, self.configuration.bpm, True)
-        sequenceCut = cutSequence(sequence,
-                                  self.configuration.primary_startTime_extractSubsequence,
-                                  self.configuration.primary_endTime_extractSubsequence)
+        sequenceCut = self.__loadCutSequence(midiPath,
+                                             midiAleatoryPath,
+                                             minNotes,
+                                             minUniques,
+                                             bpm,
+                                             startSelectionTime,
+                                             endSelectionTime, stringId)
 
-        # Save master sequences
-        writeSequence(sequence=sequence, path=infoPath, name="originalMid")
-        writeSequence(sequence=sequenceCut, path=infoPath, name="originalCutMid")
-
-        for model in self.configuration.primary_rnn_model:
+        for model in models:
 
             logging.info("Starting model: " + model)
-            modelPath = primaryPath + "/" + model
+            modelPath = pathrnn + "/" + model
             createDirIfNotExist(modelPath)
             melody_rnn = initializeRNNModel(model=model)
 
-            for step in self.configuration.primary_steps:
-                for i in range(self.configuration.primary_numberOfMelodies):
+            for step in steps:
+                for i in range(numberOfMelodies):
                     logging.info("    Generating melody (" + model + "): " + str(i) + ", step = " + str(step))
 
-                    temperature = i/self.configuration.primary_numberOfMelodies + 0.0000000001
+                    temperature = calculateTemperature(numberOfMelodies, i, self.configuration.centerTemperature)
                     predictedSequence = predictRNNSequence(melody_rnn=melody_rnn,
-                                                 steps=step,
-                                                 sequence=sequenceCut,
-                                                 temperature=temperature)
+                                                           steps=step,
+                                                           sequence=sequenceCut,
+                                                           temperature=temperature)
 
-                    filename = "p" \
+                    if (secondsDuration(predictedSequence)<=6):
+                        logging.warning("Aborting writting, sequence have less than 6 seconds")
+                        continue
+
+                    filename = "rnn_" \
                                + str(i) \
                                + "_" \
                                + str(round(secondsDuration(predictedSequence), 1)) \
@@ -119,3 +182,46 @@ class MusicGenerator:
                                + str(round(temperature, 3))
                     writeSequence(sequence=predictedSequence, path=modelPath, name=filename)
 
+    def __loadCutSequence(self, midiPath: str,
+                          midiAleatoryPath: str,
+                          minNotes,
+                          minUniques,
+                          bpm: int,
+                          startSelectionTime: int,
+                          endSelectionTime: int,
+                          stringId: str):
+        """
+
+        :rtype: NoteSequence
+        """
+        pathMidi =  None if (midiPath == None) else Constants.MAIN_PATH + "/" + midiPath
+        pathAleatoryMidi =  None if (midiAleatoryPath == None) else Constants.MAIN_PATH + "/" + midiAleatoryPath
+
+        # load and cut
+        aleatoryLength = 1
+        correct = False
+        while not correct:
+            logging.info("Start selecting track")
+            sequence = loadSequence(pathMidi, pathAleatoryMidi, bpm, True)
+            sequenceCut = cutSequence(sequence,
+                                      startSelectionTime,
+                                      endSelectionTime,
+                                      aleatoryCut = True,
+                                      aleatoryDuration = aleatoryLength)
+
+            if pathMidi != None:
+                correct = True
+            else:
+                uniques = Counter([n.pitch for n in sequenceCut.notes]).keys()
+                if (len(sequenceCut.notes) >= int(minNotes)) and len(uniques) >= int(minUniques):
+                    correct = True
+                    logging.info("Track is valid. Notes: " + str(len(sequenceCut.notes)) + ", Uniques: " + str(len(uniques)))
+                else:
+                    logging.info("Track is not valid. Notes: " + str(len(sequenceCut.notes)) + ", Uniques: " + str(len(uniques)))
+                    aleatoryLength += 0.1
+
+        # Save master sequences
+        writeSequence(sequence=sequence, path=self.path + "/general", name="selectedTrack_" + stringId)
+        writeSequence(sequence=sequenceCut, path=self.path + "/general", name="selectedTrack_" + stringId + "_cut")
+
+        return sequenceCut

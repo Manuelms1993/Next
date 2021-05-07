@@ -1,21 +1,21 @@
 import math
 
-def calculateTemperature():
-    n = 20
-    center = 0.7
-    for i in range(n):
+def calculateTemperature(n, i, center):
 
-        if (i == 0):
-            print(0.1)
-            continue
+    if (i == 0):
+        return 0.1
 
-        # Rigth side
-        if ((n - 1) / 2 <= i):
-            rs = 1 - center
-            x = (rs) / (n - i) * math.pow(rs, (n - i) / (n)) + center
-            print(str(i) + " --> " + str(x))
+    # Rigth side
+    if ((n - 1) / 2 < i):
+        rs = 1 - center
+        x = (rs) / (n - i) * math.pow(rs, (n - i) / (n)) + center
+        return x
 
-        else:
-            ls = center
-            x = ls - ((ls) / i) * math.pow(ls, (n/2 - i) / (n/2))
-            print(str(i) + " --> " + str(x))
+    elif ((n - 1) / 2 == i):
+        return center
+
+    # Left
+    else:
+        ls = center
+        x = ls - ((ls) / (i+1)) * math.pow(ls, ((n)/2 - (i/2)) / ((n)/2))
+        return x

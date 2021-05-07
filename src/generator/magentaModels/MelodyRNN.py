@@ -1,10 +1,5 @@
-import magenta
 import note_seq
-import tensorflow
-import os
-import random
 import sys
-from datetime import datetime
 from magenta.models.melody_rnn import melody_rnn_sequence_generator
 from magenta.models.shared import sequence_generator_bundle
 from note_seq.protobuf import generator_pb2
