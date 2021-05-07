@@ -8,6 +8,7 @@ from persistence.writers import writeSequence
 from utils.NoteSequenceUtils import cutSequence
 from utils.NoteSequenceUtils import secondsDuration
 from utils.constant import Constants
+from utils.utilities import calculateTemperature
 from collections import Counter
 
 class MusicGenerator:
@@ -77,7 +78,7 @@ class MusicGenerator:
 
                     logging.info("    Generating melody (" + model + "): " + str(i) + ", step = " + str(step))
 
-                    temperature = i/n_melodies + 0.0000000001
+                    temperature = calculateTemperature(n_melodies, i, 0.7)
                     sequence = generateVAE(loadedModel, 1, step, temperature)[0]
 
                     if (secondsDuration(sequence)<=6):
@@ -131,7 +132,7 @@ class MusicGenerator:
                 for i in range(numberOfMelodies):
                     logging.info("    Generating melody (" + model + "): " + str(i) + ", step = " + str(step))
 
-                    temperature = i / numberOfMelodies + 0.0000000001
+                    temperature = calculateTemperature(numberOfMelodies, i, 0.7)
                     predictedSequence = predictRNNSequence(melody_rnn=melody_rnn,
                                                            steps=step,
                                                            sequence=sequenceCut,
