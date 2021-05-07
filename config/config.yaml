@@ -1,9 +1,10 @@
 general:
   name: "track1"
   bpm: 110
+  centerTemperature: 0.6
 
 primaryMelody:
-  primary_run: true
+  primary_run: false
   primary_midiPath: null
   primary_minimumAleatoryNotes: 4
   primary_minimunUniqueNotes: 3
@@ -26,5 +27,26 @@ drums:
   drums_steps: [64, 512]
   drums_vae_model: ["groovae_4bar"]
 
+bass:
+  bass_run: false
+  bass_midiPath: null
+  bass_minimumAleatoryNotes: 2
+  bass_minimunUniqueNotes: 2
+  bass_midiAleatoryPath: "resources/mid/bass"
+  bass_startTime_extractSubsequence: null
+  bass_endTime_extractSubsequence: null
+  bass_numberOfMelodies: 10
+  bass_steps: [64, 256]
+  bass_rnn_model: ["mono_rnn", "lookback_rnn", "attention_rnn"]
 
-
+arp:
+  arp_run: true
+  arp_midiPath: null
+  arp_minimumAleatoryNotes: 4
+  arp_minimunUniqueNotes: 4
+  arp_midiAleatoryPath: "resources/mid/arp"
+  arp_startTime_extractSubsequence: null
+  arp_endTime_extractSubsequence: null
+  arp_numberOfMelodies: 10
+  arp_steps: [64, 256]
+  arp_rnn_model: ["mono_rnn", "lookback_rnn", "attention_rnn"]

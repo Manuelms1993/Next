@@ -60,7 +60,39 @@ class MusicGenerator:
         else:
             logging.info("drums directory already exist!")
 
+        if (not dirExist(self.path + "/bass") and self.configuration.bass_run):
+            self.__run_rnnModel(
+                 pathrnn=self.path + "/bass",
+                 stringId="bass",
+                 midiPath=self.configuration.bass_midiPath,
+                 minNotes=self.configuration.bass_minimumAleatoryNotes,
+                 minUniques=self.configuration.bass_minimunUniqueNotes,
+                 midiAleatoryPath=self.configuration.bass_midiAleatoryPath,
+                 startSelectionTime=self.configuration.bass_startTime_extractSubsequence,
+                 endSelectionTime=self.configuration.bass_endTime_extractSubsequence,
+                 bpm=self.configuration.bpm,
+                 models=self.configuration.bass_rnn_model,
+                 steps=self.configuration.bass_steps,
+                 numberOfMelodies=self.configuration.bass_numberOfMelodies)
+        else:
+            logging.info("bass directory already exist!")
 
+        if (not dirExist(self.path + "/arp") and self.configuration.arp_run):
+            self.__run_rnnModel(
+                 pathrnn=self.path + "/arp",
+                 stringId="arp",
+                 midiPath=self.configuration.arp_midiPath,
+                 minNotes=self.configuration.arp_minimumAleatoryNotes,
+                 minUniques=self.configuration.arp_minimunUniqueNotes,
+                 midiAleatoryPath=self.configuration.arp_midiAleatoryPath,
+                 startSelectionTime=self.configuration.arp_startTime_extractSubsequence,
+                 endSelectionTime=self.configuration.arp_endTime_extractSubsequence,
+                 bpm=self.configuration.bpm,
+                 models=self.configuration.arp_rnn_model,
+                 steps=self.configuration.arp_steps,
+                 numberOfMelodies=self.configuration.arp_numberOfMelodies)
+        else:
+            logging.info("arp directory already exist!")
 
 
     def __runVAE(self, pathVAE, n_melodies, models, steps):
@@ -78,7 +110,7 @@ class MusicGenerator:
 
                     logging.info("    Generating melody (" + model + "): " + str(i) + ", step = " + str(step))
 
-                    temperature = calculateTemperature(n_melodies, i, 0.7)
+                    temperature = calculateTemperature(n_melodies, i, self.configuration.centerTemperature)
                     sequence = generateVAE(loadedModel, 1, step, temperature)[0]
 
                     if (secondsDuration(sequence)<=6):
@@ -132,7 +164,7 @@ class MusicGenerator:
                 for i in range(numberOfMelodies):
                     logging.info("    Generating melody (" + model + "): " + str(i) + ", step = " + str(step))
 
-                    temperature = calculateTemperature(numberOfMelodies, i, 0.7)
+                    temperature = calculateTemperature(numberOfMelodies, i, self.configuration.centerTemperature)
                     predictedSequence = predictRNNSequence(melody_rnn=melody_rnn,
                                                            steps=step,
                                                            sequence=sequenceCut,

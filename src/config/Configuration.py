@@ -16,7 +16,7 @@ class Configuration:
         # General Properties
         self.trackName = self.values['general']['name']
         self.bpm = self.values['general']['bpm']
-
+        self.centerTemperature = self.values['general']['centerTemperature']
 
         # primaryMelody
         self.primary_run = self.values['primaryMelody']['primary_run']
@@ -41,3 +41,27 @@ class Configuration:
         self.secondaryMelody_numberOfMelodies = self.values['secondaryMelody']['melody_numberOfMelodies']
         self.secondaryMelody_steps = self.values['secondaryMelody']['melody_steps']
         self.secondaryMelody_vae_model = self.values['secondaryMelody']['melody_vae_model']
+
+        # bass
+        self.bass_run = self.values['bass']['bass_run']
+        self.bass_midiPath = self.values['bass']['bass_midiPath']
+        self.bass_midiAleatoryPath = self.values['bass']['bass_midiAleatoryPath']
+        self.bass_minimumAleatoryNotes = self.values['bass']['bass_minimumAleatoryNotes']
+        self.bass_minimunUniqueNotes = self.values['bass']['bass_minimunUniqueNotes']
+        self.bass_startTime_extractSubsequence = self.values['bass']['bass_startTime_extractSubsequence']
+        self.bass_endTime_extractSubsequence = self.values['bass']['bass_endTime_extractSubsequence']
+        self.bass_numberOfMelodies = self.values['bass']['bass_numberOfMelodies']
+        self.bass_steps = self.values['bass']['bass_steps']
+        self.bass_rnn_model = self.values['bass']['bass_rnn_model']
+
+        # bass
+        self.arp_run = self.values['arp']['arp_run']
+        self.arp_midiPath = self.values['arp']['arp_midiPath']
+        self.arp_midiAleatoryPath = self.values['arp']['arp_midiAleatoryPath']
+        self.arp_minimumAleatoryNotes = self.values['arp']['arp_minimumAleatoryNotes']
+        self.arp_minimunUniqueNotes = self.values['arp']['arp_minimunUniqueNotes']
+        self.arp_startTime_extractSubsequence = self.values['arp']['arp_startTime_extractSubsequence']
+        self.arp_endTime_extractSubsequence = self.values['arp']['arp_endTime_extractSubsequence']
+        self.arp_numberOfMelodies = self.values['arp']['arp_numberOfMelodies']
+        self.arp_steps = self.values['arp']['arp_steps']
+        self.arp_rnn_model = self.values['arp']['arp_rnn_model']
