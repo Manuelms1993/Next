@@ -117,7 +117,7 @@ class MusicGenerator:
                         logging.warning("Aborting writting, sequence have less than 6 seconds")
                         continue
 
-                    filename = "vae" \
+                    filename = "vae_" \
                                + str(i) \
                                + "_" \
                                + str(round(secondsDuration(sequence), 1)) \
@@ -174,7 +174,7 @@ class MusicGenerator:
                         logging.warning("Aborting writting, sequence have less than 6 seconds")
                         continue
 
-                    filename = "p" \
+                    filename = "rnn_" \
                                + str(i) \
                                + "_" \
                                + str(round(secondsDuration(predictedSequence), 1)) \
