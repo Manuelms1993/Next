@@ -3,6 +3,7 @@ import logging
 from magenta.models.music_vae import configs
 from magenta.models.music_vae.trained_model import TrainedModel
 from utils.constant import Constants
+import sys
 
 # https://github.com/magenta/magenta/tree/master/magenta/models/music_vae#pre-trained-checkpoints
 # https://github.com/magenta/magenta-js/blob/master/music/checkpoints/README.md
@@ -19,6 +20,7 @@ def getTrainedModelVAE(config_map_model, batch_size = 8):
 
     if (chkpnt == None):
         logging.error("Model Not Found: " + config_map_model)
+        sys.exit(1)
 
     logging.info("Loading " + config_map_model + "in checkpoint: " + chkpnt)
     return TrainedModel(

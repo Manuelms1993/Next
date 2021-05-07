@@ -10,6 +10,9 @@ from utils.NoteSequenceUtils import secondsDuration
 from utils.constant import Constants
 from utils.utilities import calculateTemperature
 from collections import Counter
+from generator.magentaModels.interpolate import interpolate
+import os
+from glob import glob
 
 class MusicGenerator:
 
@@ -32,8 +35,7 @@ class MusicGenerator:
                           self.configuration.secondaryMelody_numberOfMelodies,
                           self.configuration.secondaryMelody_vae_model,
                           self.configuration.secondaryMelody_steps)
-        else:
-            logging.info("melody directory already exist!")
+
 
         if (not dirExist(self.path + "/primaryMelody") and self.configuration.primary_run):
             self.__run_rnnModel(
@@ -49,16 +51,12 @@ class MusicGenerator:
                  models=self.configuration.primary_rnn_model,
                  steps=self.configuration.primary_steps,
                  numberOfMelodies=self.configuration.primary_numberOfMelodies)
-        else:
-            logging.info("primaryMelody directory already exist!")
 
         if (not dirExist(self.path + "/drums") and self.configuration.drums_run):
             self.__runVAE(self.path + "/drums",
                           self.configuration.drums_numberOfMelodies,
                           self.configuration.drums_vae_model,
                           self.configuration.drums_steps)
-        else:
-            logging.info("drums directory already exist!")
 
         if (not dirExist(self.path + "/bass") and self.configuration.bass_run):
             self.__run_rnnModel(
@@ -74,8 +72,7 @@ class MusicGenerator:
                  models=self.configuration.bass_rnn_model,
                  steps=self.configuration.bass_steps,
                  numberOfMelodies=self.configuration.bass_numberOfMelodies)
-        else:
-            logging.info("bass directory already exist!")
+
 
         if (not dirExist(self.path + "/arp") and self.configuration.arp_run):
             self.__run_rnnModel(
@@ -91,9 +88,9 @@ class MusicGenerator:
                  models=self.configuration.arp_rnn_model,
                  steps=self.configuration.arp_steps,
                  numberOfMelodies=self.configuration.arp_numberOfMelodies)
-        else:
-            logging.info("arp directory already exist!")
 
+        if self.configuration.interpolate_primary_secondary:
+            self.__interpolate(self.path + "/primaryMelody", self.path + "/secondaryMelody")
 
     def __runVAE(self, pathVAE, n_melodies, models, steps):
 
@@ -225,3 +222,33 @@ class MusicGenerator:
         writeSequence(sequence=sequenceCut, path=self.path + "/general", name="selectedTrack_" + stringId + "_cut")
 
         return sequenceCut
+
+    def __interpolate(self, pathTrack, interPath):
+
+        if not dirExist(pathTrack) or not dirExist(interPath): return
+
+        interpolatePath = pathTrack + "/interpolate"
+
+        # creating some paths
+        createDirIfNotExist(interpolatePath)
+
+        logging.info("Interpolate path1: " + str(pathTrack))
+        logging.info("Interpolate path2: " + str(interPath))
+
+        filesTrack = [y for x in os.walk(pathTrack) for y in glob(os.path.join(x[0], '*.mid'))]
+        filesInter = [y for x in os.walk(interPath) for y in glob(os.path.join(x[0], '*.mid'))]
+
+        model = getTrainedModelVAE(self.configuration.interpolate_model)
+
+        n = 0
+        for f1 in filesTrack:
+            for f2 in filesInter:
+
+                try:
+                    seq = interpolate(model, f1, f2, self.configuration.bpm, 8, 8, 0.1)
+                    if not seq == None:
+                        writeSequence(sequence=seq, path=interpolatePath, name="interpolate_" + str(n))
+                        n += 1
+                except:
+                    pass
+

@@ -9,6 +9,7 @@ __pycache__/
 
 content
 resources/generated/output
+resources/mid
 
 # C extensions
 *.so

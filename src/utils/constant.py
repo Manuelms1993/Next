@@ -2,8 +2,9 @@
 
 class Constants:
 
-    MAIN_PATH = r"C:/Users/m.montero/PycharmProjects/Next"
-    OUTPUT_PATH = r"resources/generated/output/mid"
+    #MAIN_PATH = r"C:/Users/m.montero/PycharmProjects/Next"
+    MAIN_PATH = r"/Users/manuelmontero/PycharmProjects/NEXT"
+    OUTPUT_PATH = r"resources/generated/output"
     GENERAL_MID_PATH = MAIN_PATH + "/" + r"resources/mid/general"
     DOWLOAD_PATH = MAIN_PATH + "/" + r"content/"
 

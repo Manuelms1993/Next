@@ -3,21 +3,25 @@ general:
   bpm: 110
   centerTemperature: 0.6
 
+interpolates:
+  interpolate_model: "cat-mel_2bar_big"
+  interpolate_primary_secondary: true
+
 primaryMelody:
   primary_run: false
   primary_midiPath: null
   primary_minimumAleatoryNotes: 4
   primary_minimunUniqueNotes: 3
-  primary_midiAleatoryPath: "resources/mid/general"
+  primary_midiAleatoryPath: "resources/mid/lotofmidi/ManuelMontero"
   primary_startTime_extractSubsequence: null
   primary_endTime_extractSubsequence: null
-  primary_numberOfMelodies: 10
+  primary_numberOfMelodies: 2
   primary_steps: [64, 256]
   primary_rnn_model: ["mono_rnn", "lookback_rnn", "attention_rnn"]
 
 secondaryMelody:
   melody_run: false
-  melody_numberOfMelodies: 5
+  melody_numberOfMelodies: 2
   melody_steps: [64]
   melody_vae_model: ["cat-mel_2bar_big", "hierdec-mel_16bar"]
 
@@ -40,7 +44,7 @@ bass:
   bass_rnn_model: ["mono_rnn", "lookback_rnn", "attention_rnn"]
 
 arp:
-  arp_run: true
+  arp_run: false
   arp_midiPath: null
   arp_minimumAleatoryNotes: 4
   arp_minimunUniqueNotes: 4
