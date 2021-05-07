@@ -3,13 +3,16 @@ general:
   bpm: 110
 
 primaryMelody:
-  primary_run: false
-  primary_midiPath: "C:/Users/m.montero/PycharmProjects/Next/resources/mid/general/Avicii/Avicii-DancingInMyHead.mid"
-  primary_startTime_extractSubsequence: 2
-  primary_endTime_extractSubsequence: 4
+  primary_run: true
+  primary_midiPath: null
+  primary_minimumAleatoryNotes: 4
+  primary_minimunUniqueNotes: 3
+  primary_midiAleatoryPath: "resources/mid/general"
+  primary_startTime_extractSubsequence: null
+  primary_endTime_extractSubsequence: null
   primary_numberOfMelodies: 10
   primary_steps: [64, 256]
-  primary_rnn_model: ["basic_rnn", "mono_rnn", "lookback_rnn", "attention_rnn"]
+  primary_rnn_model: ["mono_rnn", "lookback_rnn", "attention_rnn"]
 
 secondaryMelody:
   melody_run: false

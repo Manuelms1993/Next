@@ -13,11 +13,11 @@ def cutSequence(sequence, start: int, end: int, aleatoryCut = True, aleatoryDura
     elif (aleatoryCut):
         logging.info("Aleatory cut.")
         seconds = round(secondsDuration(sequence))
-        r = random.randint(1, seconds-aleatoryDuration)
-        logging.info("Automatic cut in range " + str(r-aleatoryDuration) + "-" + str(r))
+        r = random.uniform(aleatoryDuration, seconds-aleatoryDuration)
+        logging.info("Automatic cut in range " + str(round(r-aleatoryDuration, 2)) + "-" + str(round(r,2)))
         sequence = note_seq.extract_subsequence(
             sequence=sequence,
-            start_time=r-aleatoryDuration,
+            start_time= 0 if (r-aleatoryDuration) <= 0 else r-aleatoryDuration,
             end_time=r)
     else:
         sys.exit(1)

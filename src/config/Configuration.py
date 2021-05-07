@@ -17,9 +17,13 @@ class Configuration:
         self.trackName = self.values['general']['name']
         self.bpm = self.values['general']['bpm']
 
+
         # primaryMelody
         self.primary_run = self.values['primaryMelody']['primary_run']
         self.primary_midiPath = self.values['primaryMelody']['primary_midiPath']
+        self.primary_midiAleatoryPath = self.values['primaryMelody']['primary_midiAleatoryPath']
+        self.primary_minimumAleatoryNotes = self.values['primaryMelody']['primary_minimumAleatoryNotes']
+        self.primary_minimunUniqueNotes = self.values['primaryMelody']['primary_minimunUniqueNotes']
         self.primary_startTime_extractSubsequence = self.values['primaryMelody']['primary_startTime_extractSubsequence']
         self.primary_endTime_extractSubsequence = self.values['primaryMelody']['primary_endTime_extractSubsequence']
         self.primary_numberOfMelodies = self.values['primaryMelody']['primary_numberOfMelodies']
