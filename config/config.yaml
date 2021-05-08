@@ -5,30 +5,35 @@ general:
 
 interpolates:
   interpolate_model: "cat-mel_2bar_big"
-  interpolate_primary_secondary: true
+  interpolate_limit: 50
+  interpolate_primary_secondary: false
+  interpolate_arp_primary: false
+  interpolate_arp_secondary: false
+  interpolate_bass_primary: false
+  interpolate_bass_secondary: false
 
 primaryMelody:
   primary_run: false
   primary_midiPath: null
   primary_minimumAleatoryNotes: 4
   primary_minimunUniqueNotes: 3
-  primary_midiAleatoryPath: "resources/mid/lotofmidi/ManuelMontero"
+  primary_midiAleatoryPath: "resources/mid/ManuelMontero"
   primary_startTime_extractSubsequence: null
   primary_endTime_extractSubsequence: null
-  primary_numberOfMelodies: 2
-  primary_steps: [64, 256]
+  primary_numberOfMelodies: 10
+  primary_steps: [32, 64, 128]
   primary_rnn_model: ["mono_rnn", "lookback_rnn", "attention_rnn"]
 
 secondaryMelody:
   melody_run: false
-  melody_numberOfMelodies: 2
-  melody_steps: [64]
+  melody_numberOfMelodies: 10
+  melody_steps: [32, 64]
   melody_vae_model: ["cat-mel_2bar_big", "hierdec-mel_16bar"]
 
 drums:
   drums_run: false
-  drums_numberOfMelodies: 20
-  drums_steps: [64, 512]
+  drums_numberOfMelodies: 10
+  drums_steps: [32, 64, 128]
   drums_vae_model: ["groovae_4bar"]
 
 bass:
@@ -40,7 +45,7 @@ bass:
   bass_startTime_extractSubsequence: null
   bass_endTime_extractSubsequence: null
   bass_numberOfMelodies: 10
-  bass_steps: [64, 256]
+  bass_steps: [32, 64, 128]
   bass_rnn_model: ["mono_rnn", "lookback_rnn", "attention_rnn"]
 
 arp:
@@ -52,5 +57,5 @@ arp:
   arp_startTime_extractSubsequence: null
   arp_endTime_extractSubsequence: null
   arp_numberOfMelodies: 10
-  arp_steps: [64, 256]
+  arp_steps: [32, 64, 128]
   arp_rnn_model: ["mono_rnn", "lookback_rnn", "attention_rnn"]

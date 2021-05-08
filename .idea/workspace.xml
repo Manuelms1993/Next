@@ -20,32 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/generator/magentaModels/interpolate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Avicii/Avicii-DancingInMyHead.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/Deadmau5_ FaxingBerlin_1.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/Deadmau5_ FaxingBerlin_2.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/Deadmau5_Animal_Rights.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/Deadmau5_Arguru.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/Deadmau5_Get_in_the_Cart_Pig.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/Deadmau5_Maths.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/Deadmau5_RaiseYourWeapon.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/Deadmau5_RightThisSecond.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/Deadmau5_Strobe_1.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/Deadmau5_Strobe_2.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/Deadmau5_Strobe_3.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/deadmau5_4ware.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/deadmau5_Monophobia.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/deadmau5_TheVeldt.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/deadmau5_moarghostandstuff.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/mid/ManuelMontero/Deadmau5/deadmau5_polaris.mid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Avicii/Avicii-DancingInMyHead.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_ FaxingBerlin_1.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_ FaxingBerlin_2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_Animal_Rights.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_Arguru.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_Get_in_the_Cart_Pig.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_Maths.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_RaiseYourWeapon.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_RightThisSecond.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_Strobe_1.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_Strobe_2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/Deadmau5_Strobe_3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/deadmau5_4ware.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/deadmau5_Monophobia.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/deadmau5_TheVeldt.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/deadmau5_moarghostandstuff.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/general/Deadmau5/deadmau5_polaris.mid" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/Configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/Configuration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generator/magentaModels/modelVAE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/magentaModels/modelVAE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generator/magentaModels/interpolate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/magentaModels/interpolate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/persistence/loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/loaders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constant.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,16 +77,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/mid" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/mid" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\config" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src\generator\magentaModels" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src2" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src" />
-      <recent name="C:\Users\m.montero\PycharmProjects\Next\src\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\m.montero\PycharmProjects\Next\resources\mid\artists" />
@@ -255,6 +253,14 @@
       <option name="presentableId" value="Default" />
       <updated>1578339312785</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1620415420909</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620415420909</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,5 +274,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>

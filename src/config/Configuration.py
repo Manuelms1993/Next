@@ -20,7 +20,12 @@ class Configuration:
 
         # General Properties
         self.interpolate_model = self.values['interpolates']['interpolate_model']
+        self.interpolate_limit = self.values['interpolates']['interpolate_limit']
         self.interpolate_primary_secondary = self.values['interpolates']['interpolate_primary_secondary']
+        self.interpolate_arp_primary = self.values['interpolates']['interpolate_arp_primary']
+        self.interpolate_arp_secondary = self.values['interpolates']['interpolate_arp_secondary']
+        self.interpolate_bass_primary = self.values['interpolates']['interpolate_bass_primary']
+        self.interpolate_bass_secondary = self.values['interpolates']['interpolate_bass_secondary']
 
         # primaryMelody
         self.primary_run = self.values['primaryMelody']['primary_run']

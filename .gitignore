@@ -9,7 +9,7 @@ __pycache__/
 
 content
 resources/generated/output
-resources/mid
+resources/mid/lotofmidi
 
 # C extensions
 *.so

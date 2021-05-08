@@ -90,7 +90,15 @@ class MusicGenerator:
                  numberOfMelodies=self.configuration.arp_numberOfMelodies)
 
         if self.configuration.interpolate_primary_secondary:
-            self.__interpolate(self.path + "/primaryMelody", self.path + "/secondaryMelody")
+            self.__interpolate(self.path + "/primaryMelody", self.path + "/secondaryMelody", "primVSsec")
+        if self.configuration.interpolate_arp_primary:
+            self.__interpolate(self.path + "/arp", self.path + "/primaryMelody", "arpVSprim")
+        if self.configuration.interpolate_arp_secondary:
+            self.__interpolate(self.path + "/arp", self.path + "/secondaryMelody", "arpVSsec")
+        if self.configuration.interpolate_bass_primary:
+            self.__interpolate(self.path + "/bass", self.path + "/primaryMelody", "bassVSprim")
+        if self.configuration.interpolate_bass_secondary:
+            self.__interpolate(self.path + "/bass", self.path + "/secondaryMelody", "bassVSsec")
 
     def __runVAE(self, pathVAE, n_melodies, models, steps):
 
@@ -223,7 +231,7 @@ class MusicGenerator:
 
         return sequenceCut
 
-    def __interpolate(self, pathTrack, interPath):
+    def __interpolate(self, pathTrack, interPath, name):
 
         if not dirExist(pathTrack) or not dirExist(interPath): return
 
@@ -243,12 +251,14 @@ class MusicGenerator:
         n = 0
         for f1 in filesTrack:
             for f2 in filesInter:
-
                 try:
-                    seq = interpolate(model, f1, f2, self.configuration.bpm, 8, 8, 0.1)
+                    seq = interpolate(model, f1, f2, self.configuration.bpm, 16, 16, 0.1)
                     if not seq == None:
-                        writeSequence(sequence=seq, path=interpolatePath, name="interpolate_" + str(n))
+                        writeSequence(sequence=seq, path=interpolatePath, name=name + str(n))
                         n += 1
                 except:
-                    pass
+                    logging.warning("Exception interpolate")
+
+                if n>self.configuration.interpolate_limit: return
+
 
