@@ -26,3 +26,12 @@ def cutSequence(sequence, start: int, end: int, aleatoryCut = True, aleatoryDura
 
 def secondsDuration(sequence):
     return (max(n.end_time for n in sequence.notes) if sequence.notes else 0)
+
+
+def getInstrumentPath(path):
+    outputProgram = random.choice([1,2,3,4,5,6,7,8])
+    if "/bass" in path:
+        outputProgram = random.choice([33,34,35,36,37,38,39,40])
+    if "/pad" in path:
+        outputProgram = random.choice([89,90,91,92,93,94,95,96])
+    return outputProgram
