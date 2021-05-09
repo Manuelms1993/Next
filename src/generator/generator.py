@@ -1,9 +1,11 @@
+import math
+
 from config.Configuration import Configuration
 from utils.FSUtils import constructOutputPath, dirExist, createDirIfNotExist
 import logging
 from generator.magentaModels.MelodyRNN import initializeRNNModel, predictRNNSequence
 from generator.magentaModels.modelVAE import getTrainedModelVAE, generateVAE
-from persistence.loaders import loadSequence
+from persistence.loaders import loadSequence, load
 from persistence.writers import writeSequence
 from utils.NoteSequenceUtils import cutSequence
 from utils.NoteSequenceUtils import secondsDuration, getInstrumentPath
@@ -14,6 +16,8 @@ from generator.magentaModels.interpolate import interpolate
 import os
 from glob import glob
 import random
+from generator.chords import Chord, Chords, KEYS_NUMBERS
+from note_seq.protobuf import music_pb2
 
 class MusicGenerator:
 
@@ -109,6 +113,7 @@ class MusicGenerator:
                  steps=self.configuration.pad_steps,
                  numberOfMelodies=self.configuration.pad_numberOfMelodies)
 
+        # interpolate
         if self.configuration.interpolate_primary_secondary:
             self.__interpolate(self.path + "/primaryMelody", self.path + "/secondaryMelody", "primVSsec")
         if self.configuration.interpolate_arp_primary:
@@ -124,6 +129,49 @@ class MusicGenerator:
         if self.configuration.interpolate_pad_secondary:
             self.__interpolate(self.path + "/pad", self.path + "/secondaryMelody", "padVSsec")
 
+        # chords
+        if self.configuration.chords_secondary:
+            self.__chords(self.path + "/secondaryMelody")
+
+
+    def __chords(self, pathMelody):
+
+        chords = Chords()
+
+        if not dirExist(pathMelody) or not dirExist(pathMelody): return
+        filesTrack = [y for x in os.walk(pathMelody) for y in glob(os.path.join(x[0], '*.mid'))]
+        if len(filesTrack) == 0:
+            logging.info("No files to create chords")
+
+        for scale in self.configuration.chords_scale:
+
+            for file in filesTrack:
+                if "chord.mid" in file: continue
+                logging.info("Creating chord (" + scale + ") for file: " + file)
+
+                sequence = load(file)
+                chordsSequence = music_pb2.NoteSequence()
+
+                for note in [n for n in sequence.notes]:
+                    pitch = note.pitch
+                    normalizePitch = ((pitch-1) % 12) + 1
+                    scaleRange = round(pitch / 12)
+
+                    logging.info("Searching pitch=" + str(pitch) + ", normalizePitch=" + str(normalizePitch) + ", scaleRange=" + str(scaleRange))
+                    chord = chords.getFinalChord(scale, normalizePitch)
+
+                    for key in chord.keys_numbers:
+                        reescale = (12*scaleRange) + key
+                        logging.info("KEY: " + str(reescale))
+                        chordsSequence.notes.add(pitch=reescale,
+                                          start_time=note.start_time,
+                                          end_time=note.end_time,
+                                          velocity=note.velocity)
+
+                dir = os.path.dirname(file)
+                filename = os.path.basename(file).replace(".mid", scale.replace(" ", "_")) + "_chord"
+                logging.info("Write file: " + dir + "/" + filename)
+                writeSequence(chordsSequence, dir, filename)
 
     def __runVAE(self, pathVAE, n_melodies, models, steps):
 

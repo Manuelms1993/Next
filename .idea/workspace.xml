@@ -23,7 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/documentation/TODO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generator/chords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/Configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/Configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/persistence/loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/loaders.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,16 +62,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/generator" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/generator" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/resources/mid" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\config" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src\generator\magentaModels" />
-      <recent name="C:\Users\m.montero\PycharmProjects\Next\src2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\m.montero\PycharmProjects\Next\resources\mid\artists" />
@@ -268,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620555877245</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add todo">
+      <created>1620556202971</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620556202971</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,6 +301,7 @@
     <MESSAGE value="outut instrument" />
     <MESSAGE value="mid" />
     <MESSAGE value="version1" />
-    <option name="LAST_COMMIT_MESSAGE" value="version1" />
+    <MESSAGE value="add todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add todo" />
   </component>
 </project>

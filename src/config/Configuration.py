@@ -18,7 +18,7 @@ class Configuration:
         self.bpm = self.values['general']['bpm']
         self.centerTemperature = self.values['general']['centerTemperature']
 
-        # General Properties
+        # inter
         self.interpolate_model = self.values['interpolates']['interpolate_model']
         self.interpolate_limit = self.values['interpolates']['interpolate_limit']
         self.interpolate_primary_secondary = self.values['interpolates']['interpolate_primary_secondary']
@@ -28,6 +28,10 @@ class Configuration:
         self.interpolate_bass_secondary = self.values['interpolates']['interpolate_bass_secondary']
         self.interpolate_pad_primary = self.values['interpolates']['interpolate_pad_primary']
         self.interpolate_pad_secondary = self.values['interpolates']['interpolate_pad_secondary']
+
+        # chords
+        self.chords_scale = self.values['chords']['chords_scale']
+        self.chords_secondary = self.values['chords']['chords_secondary']
 
         # primaryMelody
         self.primary_run = self.values['primaryMelody']['primary_run']

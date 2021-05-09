@@ -7,7 +7,7 @@ import logging
 from note_seq.protobuf import music_pb2
 from utils.NoteSequenceUtils import secondsDuration
 
-def load(path, bpm):
+def load(path, bpm = None):
     seq = note_seq.midi_file_to_note_sequence(path)
     seq.ticks_per_quarter = 0
     #noteSeq = music_pb2.NoteSequence()
