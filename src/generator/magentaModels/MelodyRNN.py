@@ -36,8 +36,6 @@ def predictRNNSequence(sequence,
     sequence = melody_rnn.generate(sequence, generator_options)
     return sequence
 
-
-
 def initializeRNNModel(model):
     logging.info("Initializing Melody RNN")
 

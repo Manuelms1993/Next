@@ -18,6 +18,17 @@ class Configuration:
         self.bpm = self.values['general']['bpm']
         self.centerTemperature = self.values['general']['centerTemperature']
 
+        # General Properties
+        self.interpolate_model = self.values['interpolates']['interpolate_model']
+        self.interpolate_limit = self.values['interpolates']['interpolate_limit']
+        self.interpolate_primary_secondary = self.values['interpolates']['interpolate_primary_secondary']
+        self.interpolate_arp_primary = self.values['interpolates']['interpolate_arp_primary']
+        self.interpolate_arp_secondary = self.values['interpolates']['interpolate_arp_secondary']
+        self.interpolate_bass_primary = self.values['interpolates']['interpolate_bass_primary']
+        self.interpolate_bass_secondary = self.values['interpolates']['interpolate_bass_secondary']
+        self.interpolate_pad_primary = self.values['interpolates']['interpolate_pad_primary']
+        self.interpolate_pad_secondary = self.values['interpolates']['interpolate_pad_secondary']
+
         # primaryMelody
         self.primary_run = self.values['primaryMelody']['primary_run']
         self.primary_midiPath = self.values['primaryMelody']['primary_midiPath']
@@ -65,3 +76,15 @@ class Configuration:
         self.arp_numberOfMelodies = self.values['arp']['arp_numberOfMelodies']
         self.arp_steps = self.values['arp']['arp_steps']
         self.arp_rnn_model = self.values['arp']['arp_rnn_model']
+
+        # pad
+        self.pad_run = self.values['pad']['pad_run']
+        self.pad_midiPath = self.values['pad']['pad_midiPath']
+        self.pad_midiAleatoryPath = self.values['pad']['pad_midiAleatoryPath']
+        self.pad_minimumAleatoryNotes = self.values['pad']['pad_minimumAleatoryNotes']
+        self.pad_minimunUniqueNotes = self.values['pad']['pad_minimunUniqueNotes']
+        self.pad_startTime_extractSubsequence = self.values['pad']['pad_startTime_extractSubsequence']
+        self.pad_endTime_extractSubsequence = self.values['pad']['pad_endTime_extractSubsequence']
+        self.pad_numberOfMelodies = self.values['pad']['pad_numberOfMelodies']
+        self.pad_steps = self.values['pad']['pad_steps']
+        self.pad_rnn_model = self.values['pad']['pad_rnn_model']

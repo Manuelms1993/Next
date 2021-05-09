@@ -6,10 +6,14 @@ from generator.magentaModels.modelVAE import getTrainedModelVAE, generateVAE
 from persistence.loaders import loadSequence
 from persistence.writers import writeSequence
 from utils.NoteSequenceUtils import cutSequence
-from utils.NoteSequenceUtils import secondsDuration
+from utils.NoteSequenceUtils import secondsDuration, getInstrumentPath
 from utils.constant import Constants
 from utils.utilities import calculateTemperature
 from collections import Counter
+from generator.magentaModels.interpolate import interpolate
+import os
+from glob import glob
+import random
 
 class MusicGenerator:
 
@@ -17,6 +21,10 @@ class MusicGenerator:
     path = None
 
     def __init__(self, configuration: Configuration) -> None:
+        """
+
+        :rtype: object
+        """
         super().__init__()
         self.configuration = configuration
 
@@ -32,8 +40,7 @@ class MusicGenerator:
                           self.configuration.secondaryMelody_numberOfMelodies,
                           self.configuration.secondaryMelody_vae_model,
                           self.configuration.secondaryMelody_steps)
-        else:
-            logging.info("melody directory already exist!")
+
 
         if (not dirExist(self.path + "/primaryMelody") and self.configuration.primary_run):
             self.__run_rnnModel(
@@ -49,16 +56,12 @@ class MusicGenerator:
                  models=self.configuration.primary_rnn_model,
                  steps=self.configuration.primary_steps,
                  numberOfMelodies=self.configuration.primary_numberOfMelodies)
-        else:
-            logging.info("primaryMelody directory already exist!")
 
         if (not dirExist(self.path + "/drums") and self.configuration.drums_run):
             self.__runVAE(self.path + "/drums",
                           self.configuration.drums_numberOfMelodies,
                           self.configuration.drums_vae_model,
                           self.configuration.drums_steps)
-        else:
-            logging.info("drums directory already exist!")
 
         if (not dirExist(self.path + "/bass") and self.configuration.bass_run):
             self.__run_rnnModel(
@@ -74,8 +77,7 @@ class MusicGenerator:
                  models=self.configuration.bass_rnn_model,
                  steps=self.configuration.bass_steps,
                  numberOfMelodies=self.configuration.bass_numberOfMelodies)
-        else:
-            logging.info("bass directory already exist!")
+
 
         if (not dirExist(self.path + "/arp") and self.configuration.arp_run):
             self.__run_rnnModel(
@@ -91,8 +93,36 @@ class MusicGenerator:
                  models=self.configuration.arp_rnn_model,
                  steps=self.configuration.arp_steps,
                  numberOfMelodies=self.configuration.arp_numberOfMelodies)
-        else:
-            logging.info("arp directory already exist!")
+
+        if (not dirExist(self.path + "/pad") and self.configuration.pad_run):
+            self.__run_rnnModel(
+                 pathrnn=self.path + "/pad",
+                 stringId="pad",
+                 midiPath=self.configuration.pad_midiPath,
+                 minNotes=self.configuration.pad_minimumAleatoryNotes,
+                 minUniques=self.configuration.pad_minimunUniqueNotes,
+                 midiAleatoryPath=self.configuration.pad_midiAleatoryPath,
+                 startSelectionTime=self.configuration.pad_startTime_extractSubsequence,
+                 endSelectionTime=self.configuration.pad_endTime_extractSubsequence,
+                 bpm=self.configuration.bpm,
+                 models=self.configuration.pad_rnn_model,
+                 steps=self.configuration.pad_steps,
+                 numberOfMelodies=self.configuration.pad_numberOfMelodies)
+
+        if self.configuration.interpolate_primary_secondary:
+            self.__interpolate(self.path + "/primaryMelody", self.path + "/secondaryMelody", "primVSsec")
+        if self.configuration.interpolate_arp_primary:
+            self.__interpolate(self.path + "/arp", self.path + "/primaryMelody", "arpVSprim")
+        if self.configuration.interpolate_arp_secondary:
+            self.__interpolate(self.path + "/arp", self.path + "/secondaryMelody", "arpVSsec")
+        if self.configuration.interpolate_bass_primary:
+            self.__interpolate(self.path + "/bass", self.path + "/primaryMelody", "bassVSprim")
+        if self.configuration.interpolate_bass_secondary:
+            self.__interpolate(self.path + "/bass", self.path + "/secondaryMelody", "bassVSsec")
+        if self.configuration.interpolate_pad_primary:
+            self.__interpolate(self.path + "/pad", self.path + "/primaryMelody", "padVSprim")
+        if self.configuration.interpolate_pad_secondary:
+            self.__interpolate(self.path + "/pad", self.path + "/secondaryMelody", "padVSsec")
 
 
     def __runVAE(self, pathVAE, n_melodies, models, steps):
@@ -113,8 +143,8 @@ class MusicGenerator:
                     temperature = calculateTemperature(n_melodies, i, self.configuration.centerTemperature)
                     sequence = generateVAE(loadedModel, 1, step, temperature)[0]
 
-                    if (secondsDuration(sequence)<=6):
-                        logging.warning("Aborting writting, sequence have less than 6 seconds")
+                    if (secondsDuration(sequence)<=3):
+                        logging.warning("Aborting writting, sequence have less than 3 seconds")
                         continue
 
                     filename = "vae_" \
@@ -170,8 +200,8 @@ class MusicGenerator:
                                                            sequence=sequenceCut,
                                                            temperature=temperature)
 
-                    if (secondsDuration(predictedSequence)<=6):
-                        logging.warning("Aborting writting, sequence have less than 6 seconds")
+                    if (secondsDuration(predictedSequence)<=3):
+                        logging.warning("Aborting writting, sequence have less than 3 seconds")
                         continue
 
                     filename = "rnn_" \
@@ -180,7 +210,10 @@ class MusicGenerator:
                                + str(round(secondsDuration(predictedSequence), 1)) \
                                + "s_" \
                                + str(round(temperature, 3))
-                    writeSequence(sequence=predictedSequence, path=modelPath, name=filename)
+                    writeSequence(sequence=predictedSequence,
+                                  path=modelPath,
+                                  name=filename,
+                                  outputProgram=getInstrumentPath(pathrnn))
 
     def __loadCutSequence(self, midiPath: str,
                           midiAleatoryPath: str,
@@ -225,3 +258,59 @@ class MusicGenerator:
         writeSequence(sequence=sequenceCut, path=self.path + "/general", name="selectedTrack_" + stringId + "_cut")
 
         return sequenceCut
+
+    def __interpolate(self, pathTrack, interPath, name):
+
+        if not dirExist(pathTrack) or not dirExist(interPath): return
+
+        interpolatePath = pathTrack + "/interpolate"
+
+        # creating some paths
+        createDirIfNotExist(interpolatePath)
+
+        logging.info("Interpolate path1: " + str(pathTrack))
+        logging.info("Interpolate path2: " + str(interPath))
+
+        filesTrack = [y for x in os.walk(pathTrack) for y in glob(os.path.join(x[0], '*.mid'))]
+        filesInter = [y for x in os.walk(interPath) for y in glob(os.path.join(x[0], '*.mid'))]
+
+        if (len(filesTrack) == 0):
+            logging.info("No tracks to interpolate in " + pathTrack)
+            return
+        if (len(filesInter) == 0):
+            logging.info("No tracks to interpolate in " + filesInter)
+            return
+
+        lens = [8, 16]
+        steps = [16, 32]
+
+        model = getTrainedModelVAE(self.configuration.interpolate_model)
+
+        i = 0
+        exp = 0
+        while i < self.configuration.interpolate_limit:
+
+            f1 = random.choice(filesTrack)
+            f2 = random.choice(filesInter)
+            l = random.choice(lens)
+            s = random.choice(steps)
+            temperature = calculateTemperature(self.configuration.interpolate_limit,
+                                               i,
+                                               self.configuration.centerTemperature)
+
+            try:
+                seq = interpolate(model, f1, f2, self.configuration.bpm, l, s, temperature)
+
+                if (secondsDuration(seq) <= 3):
+                    logging.warning("Aborting writting, sequence have less than 3 seconds")
+                    continue
+
+                if not seq == None:
+                    writeSequence(sequence=seq, path=interpolatePath, name=name + str(i), outputProgram=getInstrumentPath(pathTrack))
+                    i += 1
+            except:
+                logging.warning("Exception interpolate")
+                exp += 1
+                if (exp >= 30):
+                    logging.warning("Abort interpolate in " + str(interPath))
+                    return
