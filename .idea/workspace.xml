@@ -22,269 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="mid">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/Diode Eins - Signal Chords 01 - Schwerelos.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/Diode Eins - Signal Chords 02 - Ankunft.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/Diode Eins - Signal Chords 03 - Ankunft.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/Diode Eins - Signal Chords 04 - Ankunft.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/Diode Eins - Signal Chords 05 - Ankunft.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/Diode Eins - Signal Chords 06 - Ankunft.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/Diode Eins - Signal Chords 07 - Exoplanet.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/Diode Eins - Signal Chords 08 - Meteor.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/Diode Eins - Signal Chords 09 - Startsequenz.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_10_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_11_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_12_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_13_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_14_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_15_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_16_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_17_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_18_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_19_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_1_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_20_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_2_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_3_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_4_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_5_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_6_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_7_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_8_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/LDMV1_Track_9_Melody.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_001_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_002_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_003_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_004_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_005_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_006_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_007_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_008_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_009_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_010_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_011_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_012_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_013_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_014_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_015_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_016_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_017_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_018_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_019_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_020_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_021_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_022_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_023_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_024_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_025_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_026_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_027_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_028_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_029_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_030_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_031_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_032_F#_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_033_F#_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_034_F#_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_035_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_036_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_037_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_038_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_039_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_040_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_041_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_042_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_043_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_044_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_045_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_046_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_047_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_048_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_049_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_050_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_051_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_052_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_053_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_054_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_055_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_056_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_057_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_058_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_059_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/ManuelMontero/general midi/SPE_Melody_Loop_060_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A3 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A3 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A3 4.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A4 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A4 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A4 4.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A4.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A5 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A5 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass Wobbles - A5.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Diode Eins - Signal Bassline 01 - Treibstoff.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Diode Eins - Signal Top Bass 02 - Treibstoff.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Dirty Kit_BAT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Gettin' Low Kit_BAT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_10_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_11_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_12_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_13_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_14_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_15_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_16_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_17_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_18_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_19_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_1_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_20_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_2_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_3_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_4_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_5_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_6_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_7_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_8_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/LDMV1_Track_9_Bass.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lead bass 1.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lead bass 10.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lead bass 11.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lead bass 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lead bass 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lead bass 4.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lead bass 5.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lead bass 6.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lead bass 7.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lead bass 8.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lead bass 9.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Lmfao Party Rock Saw Bass Line Midi.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Nervo_-_YoureGonnaLoveAgain__FrozenRay_20120615224726.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_001_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_002_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_003_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_004_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_005_E_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_006_D#_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_007_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_008_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_009_B_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_010_D#_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_011_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_012_F_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_013_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_014_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_015_A#_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_016_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_017_E_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_018_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_019_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_020_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_021_E_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_022_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_023_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_024_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_025_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_026_E_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_027_D#_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_028_F_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_029_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_030_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_031_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_032_C#_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_033_F_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_034_æ_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_035_A#_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_036_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_037_E_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_038_F_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_039_æ_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_040_F_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_041_A_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_042_F_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_043_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_044_B_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_045_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_046_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_047_G_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_048_D_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_049_A#_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/SPE_Drop_&amp;_Bass_Loop_050_C_128_BPM.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Supersonic Bass {CLASSIFIX}.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A1 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A1 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A1 4.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A1.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A2 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A2 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A2 4.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A3 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A3 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A3 4.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A4 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A4 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A4 4.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits - A4.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 01 - A1 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 01 - A1.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 01 - A2 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 01 - A2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 01 - A3 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 01 - A3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 01 - A4 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 01 - A4.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 02 - A1 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 02 - A1 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 02 - A1.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 02 - A2 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 02 - A2 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 02 - A2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 02 - A3 2.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 02 - A3 3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Synth Bass Hits 02 - A3.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_A#_Bass_Midi_Loop_1.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_A#_Bass_Midi_Loop_2.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_A#_Bass_Midi_Loop_3.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_A_Bass_Midi_Loop_1.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_A_Bass_Midi_Loop_2.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_A_Bass_Midi_Loop_3.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_B_Bass_Midi_Loop_1.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_B_Bass_Midi_Loop_2.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_B_Bass_Midi_Loop_3.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_C#_Bass_Midi_Loop_1.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_C#_Bass_Midi_Loop_2.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_C#_Bass_Midi_Loop_3.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_D#_Bass_Midi_Loop_1.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_D#_Bass_Midi_Loop_2.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_D#_Bass_Midi_Loop_3.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_E_Bass_Midi_Loop_1.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_E_Bass_Midi_Loop_2.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_E_Bass_Midi_Loop_3.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_F#_Bass_Midi_Loop_1.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_F#_Bass_Midi_Loop_2.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_F#_Bass_Midi_Loop_3.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_F_Bass_Midi_Loop_1.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_F_Bass_Midi_Loop_2.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_F_Bass_Midi_Loop_3.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_G#_Bass_Midi_Loop_1.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_G#_Bass_Midi_Loop_2.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_G#_Bass_Midi_Loop_3.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_G_Bass_Midi_Loop_1.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_G_Bass_Midi_Loop_2.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mid/bass/ZTMT_BASS_MIDI_LOOPS/ZTMT_G_Bass_Midi_Loop_3.MID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generator/magentaModels/modelVAE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/magentaModels/modelVAE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/persistence/writers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/writers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/NoteSequenceUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/NoteSequenceUtils.py" afterDir="false" />
+    <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/documentation/TODO" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -522,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620469718426</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="version1">
+      <created>1620555877244</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620555877245</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -542,6 +288,7 @@
     <MESSAGE value="interpolate" />
     <MESSAGE value="outut instrument" />
     <MESSAGE value="mid" />
-    <option name="LAST_COMMIT_MESSAGE" value="mid" />
+    <MESSAGE value="version1" />
+    <option name="LAST_COMMIT_MESSAGE" value="version1" />
   </component>
 </project>
