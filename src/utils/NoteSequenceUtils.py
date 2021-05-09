@@ -34,4 +34,6 @@ def getInstrumentPath(path):
         outputProgram = random.choice([33,34,35,36,37,38,39,40])
     if "/pad" in path:
         outputProgram = random.choice([89,90,91,92,93,94,95,96])
+    if "/drums" in path:
+        return None
     return outputProgram

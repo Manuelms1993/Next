@@ -21,6 +21,10 @@ class MusicGenerator:
     path = None
 
     def __init__(self, configuration: Configuration) -> None:
+        """
+
+        :rtype: object
+        """
         super().__init__()
         self.configuration = configuration
 
@@ -139,8 +143,8 @@ class MusicGenerator:
                     temperature = calculateTemperature(n_melodies, i, self.configuration.centerTemperature)
                     sequence = generateVAE(loadedModel, 1, step, temperature)[0]
 
-                    if (secondsDuration(sequence)<=6):
-                        logging.warning("Aborting writting, sequence have less than 6 seconds")
+                    if (secondsDuration(sequence)<=3):
+                        logging.warning("Aborting writting, sequence have less than 3 seconds")
                         continue
 
                     filename = "vae_" \
@@ -191,28 +195,25 @@ class MusicGenerator:
                     logging.info("    Generating melody (" + model + "): " + str(i) + ", step = " + str(step))
 
                     temperature = calculateTemperature(numberOfMelodies, i, self.configuration.centerTemperature)
-                    try:
-                        predictedSequence = predictRNNSequence(melody_rnn=melody_rnn,
-                                                               steps=step,
-                                                               sequence=sequenceCut,
-                                                               temperature=temperature)
+                    predictedSequence = predictRNNSequence(melody_rnn=melody_rnn,
+                                                           steps=step,
+                                                           sequence=sequenceCut,
+                                                           temperature=temperature)
 
-                        if (secondsDuration(predictedSequence)<=6):
-                            logging.warning("Aborting writting, sequence have less than 6 seconds")
-                            continue
+                    if (secondsDuration(predictedSequence)<=3):
+                        logging.warning("Aborting writting, sequence have less than 3 seconds")
+                        continue
 
-                        filename = "rnn_" \
-                                   + str(i) \
-                                   + "_" \
-                                   + str(round(secondsDuration(predictedSequence), 1)) \
-                                   + "s_" \
-                                   + str(round(temperature, 3))
-                        writeSequence(sequence=predictedSequence,
-                                      path=modelPath,
-                                      name=filename,
-                                      outputProgram=getInstrumentPath(pathrnn))
-                    except:
-                        logging.error("Error predictRNNSequence")
+                    filename = "rnn_" \
+                               + str(i) \
+                               + "_" \
+                               + str(round(secondsDuration(predictedSequence), 1)) \
+                               + "s_" \
+                               + str(round(temperature, 3))
+                    writeSequence(sequence=predictedSequence,
+                                  path=modelPath,
+                                  name=filename,
+                                  outputProgram=getInstrumentPath(pathrnn))
 
     def __loadCutSequence(self, midiPath: str,
                           midiAleatoryPath: str,
@@ -272,12 +273,21 @@ class MusicGenerator:
 
         filesTrack = [y for x in os.walk(pathTrack) for y in glob(os.path.join(x[0], '*.mid'))]
         filesInter = [y for x in os.walk(interPath) for y in glob(os.path.join(x[0], '*.mid'))]
-        lens = [4, 8, 16]
-        steps = [8, 16, 32]
+
+        if (len(filesTrack) == 0):
+            logging.info("No tracks to interpolate in " + pathTrack)
+            return
+        if (len(filesInter) == 0):
+            logging.info("No tracks to interpolate in " + filesInter)
+            return
+
+        lens = [8, 16]
+        steps = [16, 32]
 
         model = getTrainedModelVAE(self.configuration.interpolate_model)
 
         i = 0
+        exp = 0
         while i < self.configuration.interpolate_limit:
 
             f1 = random.choice(filesTrack)
@@ -290,8 +300,17 @@ class MusicGenerator:
 
             try:
                 seq = interpolate(model, f1, f2, self.configuration.bpm, l, s, temperature)
+
+                if (secondsDuration(seq) <= 3):
+                    logging.warning("Aborting writting, sequence have less than 3 seconds")
+                    continue
+
                 if not seq == None:
                     writeSequence(sequence=seq, path=interpolatePath, name=name + str(i), outputProgram=getInstrumentPath(pathTrack))
                     i += 1
             except:
                 logging.warning("Exception interpolate")
+                exp += 1
+                if (exp >= 30):
+                    logging.warning("Abort interpolate in " + str(interPath))
+                    return

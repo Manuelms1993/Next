@@ -1,11 +1,11 @@
 general:
   name: "track1"
   bpm: 100
-  centerTemperature: 0.6
+  centerTemperature: 0.5
 
 interpolates:
   interpolate_model: "cat-mel_2bar_big"
-  interpolate_limit: 30
+  interpolate_limit: 20
   interpolate_primary_secondary: true
   interpolate_arp_primary: true
   interpolate_arp_secondary: true
@@ -36,7 +36,7 @@ drums:
   drums_run: true
   drums_numberOfMelodies: 10
   drums_steps: [32, 64, 128]
-  drums_vae_model: ["groovae_4bar"]
+  drums_vae_model: ["groovae_4bar" , "nade-drums_2bar_full", "hierdec-trio_16bar"]
 
 bass:
   bass_run: true
