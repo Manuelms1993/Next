@@ -16,7 +16,7 @@ interpolates:
 
 chords:
   chords_scale: ["Major Chords", "Minor Chords", "Diminished Chords", "Major 7th Chords"]
-  chords_secondary: true
+  chords_secondary: false
 
 primaryMelody:
   primary_run: false
@@ -34,7 +34,8 @@ secondaryMelody:
   melody_run: true
   melody_numberOfMelodies: 20
   melody_steps: [32, 64]
-  melody_vae_model: ["cat-mel_2bar_big", "hierdec-mel_16bar"]
+  melody_vae_model: [] #["cat-mel_2bar_big", "hierdec-mel_16bar"]
+  melody_own_vae_ckpt: ["model/deadmau5/train/model.ckpt-394"]
 
 drums:
   drums_run: false

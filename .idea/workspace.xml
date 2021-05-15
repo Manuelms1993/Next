@@ -23,12 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/generator/chords.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/trainVAE.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/TODO" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/Configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/Configuration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/persistence/loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/loaders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generator/magentaModels/modelVAE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/magentaModels/modelVAE.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +76,11 @@
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src\generator\magentaModels" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model/arp" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\resources\mid\artists" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src2" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src" />
       <recent name="C:\Users\m.montero\PycharmProjects\Next\src\otherCode" />
-      <recent name="$PROJECT_DIR$/src/chorGenerator" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -280,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620556202971</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="chords">
+      <created>1620598455599</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620598455599</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,6 +311,7 @@
     <MESSAGE value="mid" />
     <MESSAGE value="version1" />
     <MESSAGE value="add todo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add todo" />
+    <MESSAGE value="chords" />
+    <option name="LAST_COMMIT_MESSAGE" value="chords" />
   </component>
 </project>

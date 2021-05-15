@@ -44,6 +44,10 @@ class MusicGenerator:
                           self.configuration.secondaryMelody_numberOfMelodies,
                           self.configuration.secondaryMelody_vae_model,
                           self.configuration.secondaryMelody_steps)
+            self.__runOwnVAE(self.path + "/secondaryMelody",
+                          self.configuration.secondaryMelody_numberOfMelodies,
+                          self.configuration.secondaryMelody_melody_own_vae_ckpt,
+                          self.configuration.secondaryMelody_steps)
 
 
         if (not dirExist(self.path + "/primaryMelody") and self.configuration.primary_run):
@@ -172,6 +176,39 @@ class MusicGenerator:
                 filename = os.path.basename(file).replace(".mid", scale.replace(" ", "_")) + "_chord"
                 logging.info("Write file: " + dir + "/" + filename)
                 writeSequence(chordsSequence, dir, filename)
+
+    def __runOwnVAE(self, pathVAE, n_melodies, models, steps):
+
+        createDirIfNotExist(pathVAE)
+
+        for model in models:
+
+            loadedModel = getTrainedModelVAE(model, own=True)
+            modelPath = pathVAE + "/" + os.path.basename(model)
+            createDirIfNotExist(modelPath)
+
+            for step in steps:
+                for i in range(n_melodies):
+
+                    logging.info("    Generating melody (" + model + "): " + str(i) + ", step = " + str(step))
+
+                    temperature = calculateTemperature(n_melodies, i, self.configuration.centerTemperature)
+                    sequence = generateVAE(loadedModel, 1, step, temperature)[0]
+
+                    if (secondsDuration(sequence)<=3):
+                        logging.warning("Aborting writting, sequence have less than 3 seconds")
+                        continue
+
+                    filename = "vae_" \
+                               + str(i) \
+                               + "_" \
+                               + str(round(secondsDuration(sequence), 1)) \
+                               + "_" \
+                               + str(step) \
+                               + "_" \
+                               + str(round(temperature, 3))
+                    writeSequence(sequence=sequence, path=modelPath, name=filename)
+
 
     def __runVAE(self, pathVAE, n_melodies, models, steps):
 

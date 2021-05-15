@@ -56,6 +56,7 @@ class Configuration:
         self.secondaryMelody_numberOfMelodies = self.values['secondaryMelody']['melody_numberOfMelodies']
         self.secondaryMelody_steps = self.values['secondaryMelody']['melody_steps']
         self.secondaryMelody_vae_model = self.values['secondaryMelody']['melody_vae_model']
+        self.secondaryMelody_melody_own_vae_ckpt = self.values['secondaryMelody']['melody_own_vae_ckpt']
 
         # bass
         self.bass_run = self.values['bass']['bass_run']
