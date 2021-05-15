@@ -5,6 +5,7 @@ midi_files_path="/resources/mid/ManuelMontero/Deadmau5"
 INPUT_DIRECTORY=$project$midi_files_path
 OUTPUT_DS_DIRECTORY=$project"/tmp/notesequences.tfrecord"
 modelDir=$project"/model/"$name"/"
+model="cat-mel_2bar_small"
 
 echo "midi_files_path: "$midi_files_path
 echo "INPUT_DIRECTORY: "$INPUT_DIRECTORY
@@ -15,11 +16,13 @@ echo "name: "$name
 convert_dir_to_note_sequences --input_dir=$INPUT_DIRECTORY --output_file=$OUTPUT_DS_DIRECTORY --recursive
 
 music_vae_train \
---config=cat-mel_2bar_small \
+--config=$model \
 --run_dir=$modelDir \
 --mode=train \
 --examples_path=$OUTPUT_DS_DIRECTORY
 --hparams=batch_size=512,learning_rate=0.001
+
+touch $modelDir"/"model
 
 #HParams(
 #            batch_size=512,

@@ -4,7 +4,7 @@ from config.Configuration import Configuration
 from utils.FSUtils import constructOutputPath, dirExist, createDirIfNotExist
 import logging
 from generator.magentaModels.MelodyRNN import initializeRNNModel, predictRNNSequence
-from generator.magentaModels.modelVAE import getTrainedModelVAE, generateVAE
+from generator.magentaModels.modelVAE import getTrainedModelVAE, generateVAE, getOwnTrainedModelVAE
 from persistence.loaders import loadSequence, load
 from persistence.writers import writeSequence
 from utils.NoteSequenceUtils import cutSequence
@@ -183,14 +183,18 @@ class MusicGenerator:
 
         for model in models:
 
-            loadedModel = getTrainedModelVAE(model, own=True)
-            modelPath = pathVAE + "/" + os.path.basename(model)
+            modelName = model[0]
+            architecture = model[1]
+            ckpt = model[2]
+
+            loadedModel = getOwnTrainedModelVAE(architecture, ckpt)
+            modelPath = pathVAE + "/" + modelName
             createDirIfNotExist(modelPath)
 
             for step in steps:
                 for i in range(n_melodies):
 
-                    logging.info("    Generating melody (" + model + "): " + str(i) + ", step = " + str(step))
+                    logging.info("    Generating melody (" + modelName + "): " + str(i) + ", step = " + str(step))
 
                     temperature = calculateTemperature(n_melodies, i, self.configuration.centerTemperature)
                     sequence = generateVAE(loadedModel, 1, step, temperature)[0]

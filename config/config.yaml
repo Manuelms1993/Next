@@ -1,7 +1,7 @@
 general:
   name: "track1"
   bpm: 100
-  centerTemperature: 0.5
+  centerTemperature: 0.6
 
 interpolates:
   interpolate_model: "cat-mel_2bar_big"
@@ -35,7 +35,8 @@ secondaryMelody:
   melody_numberOfMelodies: 20
   melody_steps: [32, 64]
   melody_vae_model: [] #["cat-mel_2bar_big", "hierdec-mel_16bar"]
-  melody_own_vae_ckpt: ["model/deadmau5/train/model.ckpt-394"]
+  melody_own_vae_ckpt:
+    - ["deadmau5", "cat-mel_2bar_small", "model/deadmau5/train/model.ckpt-394"]
 
 drums:
   drums_run: false
