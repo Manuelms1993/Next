@@ -24,10 +24,43 @@
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/trainVAE.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/trainVAE.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generator/magentaModels/modelVAE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/magentaModels/modelVAE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/arp/Diode Eins - Signal Arp 01 - Distanz.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/arp/Diode Eins - Signal Arp 02 - Treibstoff.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/arp/Diode Eins - Signal Arp 03 - Exoplanet.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/arp/Diode Eins - Signal Arp 04 - Meteor.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/arp/Ghosthack MIDI Arp D#.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/arp/Ghosthack MIDI Arp E.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/arp/Ghosthack MIDI Arp F#.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/arp/Ghosthack MIDI Arp F.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/arp/Ghosthack MIDI Arp G.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Ghosthack MIDI Bassline D#.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Ghosthack MIDI Bassline E.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Ghosthack MIDI Bassline F#.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Ghosthack MIDI Bassline F.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/bass/Ghosthack MIDI Bassline G.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/Diode Eins - Signal Pad 01 - Meteor.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/Diode Eins - Signal Pad 02 - Treibstoff.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_10_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_11_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_12_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_13_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_14_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_15_pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_16_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_17_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_18_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_19_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_1_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_20_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_2_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_3_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_4_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_5_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_6_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_7_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_8_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/LDMV1_Track_9_Pad.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mid/pad/Pad.mid" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,8 +245,8 @@
       <item itemvalue="Python.drums" />
       <item itemvalue="Python.interpolate" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.nsynth" />
       <item itemvalue="Python.main_test" />
+      <item itemvalue="Python.nsynth" />
     </list>
     <recent_temporary>
       <list>
@@ -293,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621073911296</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="chords">
+      <created>1621101268127</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1621101268127</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
