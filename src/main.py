@@ -10,7 +10,7 @@ import time
 if __name__ == "__main__":
     start = time.time()
     logging.info("Reading config file...")
-    configuration = Configuration("config/config.yaml")
+    configuration = Configuration("config/fullconfig.yaml")
     logging.info("Creating Generator...")
     generator = MusicGenerator(configuration)
     logging.info("Executing Generator...")

@@ -19,7 +19,7 @@ chords:
   chords_secondary: false
 
 primaryMelody:
-  primary_run: false
+  primary_run: true
   primary_midiPath: null
   primary_minimumAleatoryNotes: 4
   primary_minimunUniqueNotes: 3
@@ -34,18 +34,18 @@ VAE:
   melody_run: true
   melody_numberOfMelodies: 20
   melody_steps: [32, 64]
-  melody_vae_model: [] #["cat-mel_2bar_big", "hierdec-mel_16bar"]
+  melody_vae_model: ["cat-mel_2bar_big", "hierdec-mel_16bar"]
   melody_own_vae_ckpt:
     - ["deadmau5", "cat-mel_2bar_small", "model/deadmau5/train/model.ckpt-394"]
 
 drums:
-  drums_run: false
+  drums_run: true
   drums_numberOfMelodies: 10
   drums_steps: [32, 64, 128]
   drums_vae_model: ["groovae_4bar" , "nade-drums_2bar_full", "hierdec-trio_16bar"]
 
 bass:
-  bass_run: false
+  bass_run: true
   bass_midiPath: null
   bass_minimumAleatoryNotes: 2
   bass_minimunUniqueNotes: 2
@@ -57,7 +57,7 @@ bass:
   bass_rnn_model: ["basic_rnn", "lookback_rnn", "attention_rnn"]
 
 arp:
-  arp_run: false
+  arp_run: true
   arp_midiPath: null
   arp_minimumAleatoryNotes: 4
   arp_minimunUniqueNotes: 4
@@ -69,7 +69,7 @@ arp:
   arp_rnn_model: ["mono_rnn", "lookback_rnn", "attention_rnn"]
 
 pad:
-  pad_run: false
+  pad_run: true
   pad_midiPath: null
   pad_minimumAleatoryNotes: 2
   pad_minimunUniqueNotes: 2

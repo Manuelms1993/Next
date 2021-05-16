@@ -39,12 +39,12 @@ class MusicGenerator:
         infoPath = self.path + "/general"
         createDirIfNotExist(infoPath)
 
-        if (not dirExist(self.path + "/secondaryMelody") and self.configuration.secondaryMelody_run):
-            self.__runVAE(self.path + "/secondaryMelody",
+        if (not dirExist(self.path + "/VAE") and self.configuration.secondaryMelody_run):
+            self.__runVAE(self.path + "/VAE",
                           self.configuration.secondaryMelody_numberOfMelodies,
                           self.configuration.secondaryMelody_vae_model,
                           self.configuration.secondaryMelody_steps)
-            self.__runOwnVAE(self.path + "/secondaryMelody",
+            self.__runOwnVAE(self.path + "/VAE",
                           self.configuration.secondaryMelody_numberOfMelodies,
                           self.configuration.secondaryMelody_melody_own_vae_ckpt,
                           self.configuration.secondaryMelody_steps)
@@ -119,19 +119,19 @@ class MusicGenerator:
 
         # interpolate
         if self.configuration.interpolate_primary_secondary:
-            self.__interpolate(self.path + "/primaryMelody", self.path + "/secondaryMelody", "primVSsec")
+            self.__interpolate(self.path + "/primaryMelody", self.path + "/VAE", "primVSVAE")
         if self.configuration.interpolate_arp_primary:
             self.__interpolate(self.path + "/arp", self.path + "/primaryMelody", "arpVSprim")
         if self.configuration.interpolate_arp_secondary:
-            self.__interpolate(self.path + "/arp", self.path + "/secondaryMelody", "arpVSsec")
+            self.__interpolate(self.path + "/arp", self.path + "/VAE", "arpVSVAE")
         if self.configuration.interpolate_bass_primary:
             self.__interpolate(self.path + "/bass", self.path + "/primaryMelody", "bassVSprim")
         if self.configuration.interpolate_bass_secondary:
-            self.__interpolate(self.path + "/bass", self.path + "/secondaryMelody", "bassVSsec")
+            self.__interpolate(self.path + "/bass", self.path + "/VAE", "bassVSVAE")
         if self.configuration.interpolate_pad_primary:
             self.__interpolate(self.path + "/pad", self.path + "/primaryMelody", "padVSprim")
         if self.configuration.interpolate_pad_secondary:
-            self.__interpolate(self.path + "/pad", self.path + "/secondaryMelody", "padVSsec")
+            self.__interpolate(self.path + "/pad", self.path + "/VAE", "padVSVAE")
 
         # chords
         if self.configuration.chords_secondary:
@@ -320,7 +320,7 @@ class MusicGenerator:
         pathAleatoryMidi =  None if (midiAleatoryPath == None) else Constants.MAIN_PATH + "/" + midiAleatoryPath
 
         # load and cut
-        aleatoryLength = 1
+        aleatoryLength = random.randint(1,1)
         correct = False
         while not correct:
             logging.info("Start selecting track")
@@ -381,6 +381,9 @@ class MusicGenerator:
 
             f1 = random.choice(filesTrack)
             f2 = random.choice(filesInter)
+
+            if "drums" in f2: continue
+
             l = random.choice(lens)
             s = random.choice(steps)
             temperature = calculateTemperature(self.configuration.interpolate_limit,
