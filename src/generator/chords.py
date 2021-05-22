@@ -33,9 +33,12 @@ class Chords:
         self.__addType([3, 3], "Augmented Chord")
         self.__addType([3, 2, 3], "Major Seventh Chord")
         self.__addType([2, 3, 2], "Minor Seventh Chord")
+        self.__addType([3, 3, 1], "Augmented 7th")
         self.__addType([3, 2, 2], "Dominant Seventh")
         self.__addType([1, 4], "Sus2")
         self.__addType([4, 1], "Sus4")
+        self.__addType([3, 2, 1], "Mayor Sixth")
+        self.__addType([2, 3, 1], "Minor Sixth")
         self.__addType([3, 2, 2, 3], "Dominant Ninth")
         self.__addType([3, 2, 3, 2, 2], "Major Eleventh")
 
@@ -49,6 +52,8 @@ class Chords:
             "Dominant Seventh": [x for x in self.chords if x.type == "Dominant Seventh"],
             "Sus2": [x for x in self.chords if x.type == "Sus2"],
             "Sus4": [x for x in self.chords if x.type == "Sus4"],
+            "Mayor Sixth": [x for x in self.chords if x.type == "Mayor Sixth"],
+            "Minor Sixth": [x for x in self.chords if x.type == "Minor Sixth"],
             "Dominant Ninth": [x for x in self.chords if x.type == "Dominant Ninth"],
             "Major Eleventh": [x for x in self.chords if x.type == "Major Eleventh"]
         }

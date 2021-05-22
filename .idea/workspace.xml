@@ -24,14 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="44432914-4158-4fed-81fa-aa149961c5cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/fullconfig.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/Configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/Configuration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generator/chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/chords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/persistence/writers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/writers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/NoteSequenceUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/NoteSequenceUtils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +60,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -217,8 +210,8 @@
       <item itemvalue="Python.drums" />
       <item itemvalue="Python.interpolate" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.nsynth" />
       <item itemvalue="Python.main_test" />
+      <item itemvalue="Python.nsynth" />
     </list>
     <recent_temporary>
       <list>
@@ -326,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621162445737</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="chords basics">
+      <created>1621708254811</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1621708254811</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,6 +351,7 @@
     <MESSAGE value="add todo" />
     <MESSAGE value="chords" />
     <MESSAGE value="more midis" />
-    <option name="LAST_COMMIT_MESSAGE" value="more midis" />
+    <MESSAGE value="chords basics" />
+    <option name="LAST_COMMIT_MESSAGE" value="chords basics" />
   </component>
 </project>
