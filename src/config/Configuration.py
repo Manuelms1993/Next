@@ -30,7 +30,9 @@ class Configuration:
         self.interpolate_pad_secondary = self.values['interpolates']['interpolate_pad_secondary']
 
         # chords
-        self.chords_scale = self.values['chords']['chords_scale']
+        self.chords_run = self.values['chords']['chords_run']
+        self.chords_scales = self.values['chords']['chords_scales']
+        self.chords_by_key = self.values['chords']['chords_by_key']
         self.chords_secondary = self.values['chords']['chords_secondary']
 
         # primaryMelody
@@ -70,7 +72,7 @@ class Configuration:
         self.bass_steps = self.values['bass']['bass_steps']
         self.bass_rnn_model = self.values['bass']['bass_rnn_model']
 
-        # bass
+        # arp
         self.arp_run = self.values['arp']['arp_run']
         self.arp_midiPath = self.values['arp']['arp_midiPath']
         self.arp_midiAleatoryPath = self.values['arp']['arp_midiAleatoryPath']

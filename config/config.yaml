@@ -1,6 +1,6 @@
 general:
   name: "track1"
-  bpm: 100
+  bpm: 128
   centerTemperature: 0.6
 
 interpolates:
@@ -15,7 +15,9 @@ interpolates:
   interpolate_pad_secondary: false
 
 chords:
-  chords_scale: ["Major Chords", "Minor Chords", "Diminished Chords", "Major 7th Chords"]
+  chords_run: true
+  chords_scales: true
+  chords_by_key: true
   chords_secondary: false
 
 primaryMelody:
@@ -31,7 +33,7 @@ primaryMelody:
   primary_rnn_model: ["mono_rnn", "lookback_rnn", "attention_rnn"]
 
 VAE:
-  melody_run: true
+  melody_run: false
   melody_numberOfMelodies: 20
   melody_steps: [32, 64]
   melody_vae_model: [] #["cat-mel_2bar_big", "hierdec-mel_16bar"]

@@ -8,7 +8,7 @@ from generator.magentaModels.modelVAE import getTrainedModelVAE, generateVAE, ge
 from persistence.loaders import loadSequence, load
 from persistence.writers import writeSequence
 from utils.NoteSequenceUtils import cutSequence
-from utils.NoteSequenceUtils import secondsDuration, getInstrumentPath
+from utils.NoteSequenceUtils import secondsDuration, getInstrumentPath, getEndSecondsPerBpm
 from utils.constant import Constants
 from utils.utilities import calculateTemperature
 from collections import Counter
@@ -16,7 +16,7 @@ from generator.magentaModels.interpolate import interpolate
 import os
 from glob import glob
 import random
-from generator.chords import Chord, Chords, KEYS_NUMBERS
+from generator.chords import Chord, Chords
 from note_seq.protobuf import music_pb2
 
 class MusicGenerator:
@@ -134,11 +134,72 @@ class MusicGenerator:
             self.__interpolate(self.path + "/pad", self.path + "/VAE", "padVSVAE")
 
         # chords
-        if self.configuration.chords_secondary:
-            self.__chords(self.path + "/secondaryMelody")
+        if self.configuration.chords_run:
+            chordPath = self.path + "/chords"
+            createDirIfNotExist(chordPath)
+            if self.configuration.chords_by_key: self.__generateChordsByKey(chordPath + "/byKeyChords")
+            if self.configuration.chords_scales: self.__generateBasicChords(chordPath + "/basicChords")
+
+    def __generateChordsByKey(self, pathChord):
+
+        createDirIfNotExist(pathChord)
+        chords = Chords()
+
+        for key in chords.noteKeys:
+
+            cNumber = -1
+            duration = getEndSecondsPerBpm(self.configuration.bpm, 2)
+            chordsSequence = music_pb2.NoteSequence()
+            logging.info("Generating key chord: " + key)
+
+            for k in chords.dictChors:
+                cs = chords.dictChors[k]
+
+                for c in cs:
+                    if (not c.chordName == key): continue
+                    cNumber += 1
+                    start = duration * cNumber
+                    end = duration * (cNumber + 1)
+                    for k_number in c.keys_numbers:
+                        chordsSequence.notes.add(pitch=k_number + (12 * 4),
+                                                 start_time=start,
+                                                 end_time=end,
+                                                 velocity=127)
+
+            filename = key
+            logging.info("Write file: " + str(pathChord) + "/" + str(filename))
+            writeSequence(chordsSequence, pathChord, filename)
+
+    def __generateBasicChords(self, pathChord):
+
+        createDirIfNotExist(pathChord)
+        chords = Chords()
+
+        print(chords.dictChors)
+        for k in chords.dictChors:
+            cs = chords.dictChors[k]
+
+            logging.info("Generating basic chord: " + k)
+            chordsSequence = music_pb2.NoteSequence()
+
+            cNumber = -1
+            duration = getEndSecondsPerBpm(self.configuration.bpm, 2)
+            for c in cs:
+                cNumber += 1
+                start = duration * cNumber
+                end = duration * (cNumber+1)
+                for key in c.keys_numbers:
+                    chordsSequence.notes.add(pitch=key+(12*4),
+                                             start_time=start,
+                                             end_time=end,
+                                             velocity=127)
+
+            filename = k
+            logging.info("Write file: " + pathChord + "/" + filename)
+            writeSequence(chordsSequence, pathChord, filename)
 
 
-    def __chords(self, pathMelody):
+    def __transformToChords(self, pathMelody):
 
         chords = Chords()
 

@@ -6,11 +6,12 @@ from utils.constant import Constants
 os.chdir(Constants.MAIN_PATH)
 logging.basicConfig(level = logging.INFO)
 import time
+from generator.chords import Chord, Chords
 
 if __name__ == "__main__":
     start = time.time()
     logging.info("Reading config file...")
-    configuration = Configuration("config/fullconfig.yaml")
+    configuration = Configuration("config/config.yaml")
     logging.info("Creating Generator...")
     generator = MusicGenerator(configuration)
     logging.info("Executing Generator...")

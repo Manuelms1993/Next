@@ -16,7 +16,7 @@ def writeSequence(sequence, path, name, outputProgram = None):
                 noteSeq.notes.add(pitch = note.pitch,
                                   start_time = note.start_time,
                                   end_time = note.end_time,
-                                  velocity = note.velocity,
+                                  velocity = 127,
                                   program = outputProgram)
         noteSeq.total_time = secondsDuration(noteSeq)
         note_seq.sequence_proto_to_midi_file(noteSeq, tmpName)

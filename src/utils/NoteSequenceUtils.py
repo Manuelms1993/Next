@@ -27,6 +27,10 @@ def cutSequence(sequence, start: int, end: int, aleatoryCut = True, aleatoryDura
 def secondsDuration(sequence):
     return (max(n.end_time for n in sequence.notes) if sequence.notes else 0)
 
+def getEndSecondsPerBpm(bpm, bars=2):
+    # (120 seconds / bpm / 2) = 1 beat
+    # 1 * 4 = 1Bar
+    return (120 / bpm / 2) * 4 * bars + (120 / bpm / 8)
 
 def getInstrumentPath(path):
     outputProgram = random.choice([1,2,3,4,5,6,7,8])
