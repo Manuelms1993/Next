@@ -139,6 +139,8 @@ class MusicGenerator:
             createDirIfNotExist(chordPath)
             if self.configuration.chords_by_key: self.__generateChordsByKey(chordPath + "/byKeyChords")
             if self.configuration.chords_scales: self.__generateBasicChords(chordPath + "/basicChords")
+            if self.configuration.chords_secondary_fromNoteToChord:
+                self.__transformToChords(chordPath + "/secondaryChords", self.path + "/VAE")
 
     def __generateChordsByKey(self, pathChord):
 
@@ -199,46 +201,60 @@ class MusicGenerator:
             writeSequence(chordsSequence, pathChord, filename)
 
 
-    def __transformToChords(self, pathMelody):
+    def __transformToChords(self, pathChord, pathMelody):
 
+        createDirIfNotExist(pathChord)
         chords = Chords()
 
-        if not dirExist(pathMelody) or not dirExist(pathMelody): return
+        if not dirExist(pathMelody): return
         filesTrack = [y for x in os.walk(pathMelody) for y in glob(os.path.join(x[0], '*.mid'))]
         if len(filesTrack) == 0:
             logging.info("No files to create chords")
+            return
 
-        for scale in self.configuration.chords_scale:
+        for file in filesTrack:
+            if "chord.mid" in file or "drums" in file: continue
+            logging.info("Creating chords for file: " + file)
 
-            for file in filesTrack:
-                if "chord.mid" in file: continue
-                logging.info("Creating chord (" + scale + ") for file: " + file)
+            dir = os.path.basename(os.path.dirname(file))
+            newChordsPath = pathChord + "/" + dir
+            createDirIfNotExist(newChordsPath)
+            newChordsPath_2 = newChordsPath + "/" + os.path.basename(file).replace(".mid","")
+            createDirIfNotExist(newChordsPath_2)
 
-                sequence = load(file)
+            sequence = load(file)
+
+            for i in range(self.configuration.chords_fromNoteToChord_n):
                 chordsSequence = music_pb2.NoteSequence()
+                chordsRandom = chords.dictChors[random.choice(list(chords.dictChors.keys()))]
+                # chordsRandom = chords.dictChors['Major Chords']
 
                 for note in [n for n in sequence.notes]:
+
+                    random.shuffle(chordsRandom)
                     pitch = note.pitch
                     normalizePitch = ((pitch-1) % 12) + 1
                     scaleRange = round(pitch / 12)
 
-                    logging.info("Searching pitch=" + str(pitch) + ", normalizePitch=" + str(normalizePitch) + ", scaleRange=" + str(scaleRange))
-                    chord = chords.getFinalChord(scale, normalizePitch)
+                    for c in chordsRandom:
+                        if normalizePitch in c.keys_numbers:
+                            for key in c.keys_numbers:
+                                reescale = (12*4) + key
+                                chordsSequence.notes.add(pitch=reescale,
+                                                  start_time=note.start_time,
+                                                  end_time=note.end_time,
+                                                  velocity=note.velocity)
+                            break # for not other notes
+                        else:
+                            pass
 
-                    for key in chord.keys_numbers:
-                        reescale = (12*scaleRange) + key
-                        logging.info("KEY: " + str(reescale))
-                        chordsSequence.notes.add(pitch=reescale,
-                                          start_time=note.start_time,
-                                          end_time=note.end_time,
-                                          velocity=note.velocity)
-
-                dir = os.path.dirname(file)
-                filename = os.path.basename(file).replace(".mid", scale.replace(" ", "_")) + "_chord"
-                logging.info("Write file: " + dir + "/" + filename)
-                writeSequence(chordsSequence, dir, filename)
+                filename = str(i) + "_chord"
+                logging.info("Write file: " + newChordsPath_2 + "/" + filename)
+                writeSequence(chordsSequence, newChordsPath_2, filename)
 
     def __runOwnVAE(self, pathVAE, n_melodies, models, steps):
+
+        if models == None: return
 
         createDirIfNotExist(pathVAE)
 

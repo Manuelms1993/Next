@@ -33,7 +33,8 @@ class Configuration:
         self.chords_run = self.values['chords']['chords_run']
         self.chords_scales = self.values['chords']['chords_scales']
         self.chords_by_key = self.values['chords']['chords_by_key']
-        self.chords_secondary = self.values['chords']['chords_secondary']
+        self.chords_fromNoteToChord_n = self.values['chords']['chords_fromNoteToChord_n']
+        self.chords_secondary_fromNoteToChord = self.values['chords']['chords_secondary_fromNoteToChord']
 
         # primaryMelody
         self.primary_run = self.values['primaryMelody']['primary_run']

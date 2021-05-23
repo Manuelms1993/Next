@@ -44,7 +44,7 @@ class Chords:
 
 
         self.dictChors = {
-            "Major Chords": [x for x in self.chords if x.type == "Major Chords" ],
+            "Major Chords": [x for x in self.chords if x.type == "Major Chords"],
             "Minor Chords": [x for x in self.chords if x.type == "Minor Chords"],
             "Diminished Chords": [x for x in self.chords if x.type == "Diminished Chords"],
             "Major Seventh Chord": [x for x in self.chords if x.type == "Major Seventh Chord"],

@@ -18,7 +18,8 @@ chords:
   chords_run: true
   chords_scales: true
   chords_by_key: true
-  chords_secondary: false
+  chords_fromNoteToChord_n: 10
+  chords_secondary_fromNoteToChord: true
 
 primaryMelody:
   primary_run: false
@@ -36,9 +37,9 @@ VAE:
   melody_run: false
   melody_numberOfMelodies: 20
   melody_steps: [32, 64]
-  melody_vae_model: [] #["cat-mel_2bar_big", "hierdec-mel_16bar"]
+  melody_vae_model: ["cat-mel_2bar_big"] #["cat-mel_2bar_big", "hierdec-mel_16bar"]
   melody_own_vae_ckpt:
-    - ["deadmau5", "cat-mel_2bar_small", "model/deadmau5/train/model.ckpt-394"]
+  #  - ["deadmau5", "cat-mel_2bar_small", "model/deadmau5/train/model.ckpt-394"]
 
 drums:
   drums_run: false

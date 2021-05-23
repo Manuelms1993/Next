@@ -2,6 +2,7 @@ import sys
 import note_seq
 import random
 import logging
+from math import ceil
 
 def cutSequence(sequence, start: int, end: int, aleatoryCut = True, aleatoryDuration = 1):
     if (start != None and end != None and start != "None" and end != "None"):
@@ -30,7 +31,9 @@ def secondsDuration(sequence):
 def getEndSecondsPerBpm(bpm, bars=2):
     # (120 seconds / bpm / 2) = 1 beat
     # 1 * 4 = 1Bar
-    return (120 / bpm / 2) * 4 * bars + (120 / bpm / 8)
+    result = (120 / bpm / 2) * 4 * bars
+    num = ceil(result * 100) / 100.0
+    return num
 
 def getInstrumentPath(path):
     outputProgram = random.choice([1,2,3,4,5,6,7,8])
